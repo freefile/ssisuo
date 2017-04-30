@@ -106,3 +106,2887 @@
 [ sql ] [ SQL ] select * from ssi_user [ RunTime:0.000976s ]
 
 ---------------------------------------------------------------
+[ 2017-04-30T13:20:17+08:00 ] 127.0.0.1 127.0.0.1 GET /
+[ log ] s.com/ [运行时间：0.096680s][吞吐率：10.34req/s] [内存消耗：992.92kb] [文件加载：27]
+[ info ] [ LANG ] F:\ssisuo\ssisuo\webroot\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 's.com',
+  'connection' => 'keep-alive',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ F:\ssisuo\ssisuo\webroot\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-30T13:20:27+08:00 ] 127.0.0.1 127.0.0.1 GET /index/sys
+[ log ] s.com/index/sys [运行时间：0.054687s][吞吐率：18.29req/s] [内存消耗：1,300.42kb] [文件加载：35]
+[ info ] [ LANG ] F:\ssisuo\ssisuo\webroot\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sys',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 's.com',
+  'connection' => 'keep-alive',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Sys->index[ F:\ssisuo\ssisuo\webroot\application\index\controller\Sys.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-30T13:20:29+08:00 ] 127.0.0.1 127.0.0.1 GET /index/sys/t.html
+[ log ] s.com/index/sys/t.html [运行时间：1.568359s][吞吐率：0.64req/s] [内存消耗：1,485.73kb] [文件加载：38]
+[ info ] [ LANG ] F:\ssisuo\ssisuo\webroot\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sys',
+    2 => 't',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 's.com',
+  'connection' => 'keep-alive',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Sys->t[ F:\ssisuo\ssisuo\webroot\application\index\controller\Sys.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\ssisuo\ssisuo\webroot\public/../application/index/view/header.html [ array (
+  0 => 'user',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.186523s ] mysql:dbname=ssisuo;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] select * from ssi_user where id=1 [ RunTime:0.935546s ]
+[ sql ] [ SQL ] update ssi_user set `name`='ff22f' where id =1 [ RunTime:0.294922s ]
+[ sql ] [ SQL ] select * from ssi_user [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-04-30T13:21:20+08:00 ] 127.0.0.1 127.0.0.1 GET /index/sys/t.html
+[ log ] s.com/index/sys/t.html [运行时间：0.140625s][吞吐率：7.11req/s] [内存消耗：1,485.97kb] [文件加载：38]
+[ info ] [ LANG ] F:\ssisuo\ssisuo\webroot\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sys',
+    2 => 't',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 's.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Sys->t[ F:\ssisuo\ssisuo\webroot\application\index\controller\Sys.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\ssisuo\ssisuo\webroot\public/../application/index/view/header.html [ array (
+  0 => 'user',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011718s ] mysql:dbname=ssisuo;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] select * from ssi_user where id=1 [ RunTime:0.000976s ]
+[ sql ] [ SQL ] update ssi_user set `name`='ff222290022f' where id =1 [ RunTime:0.089844s ]
+[ sql ] [ SQL ] select * from ssi_user [ RunTime:0.000977s ]
+
+---------------------------------------------------------------
+[ 2017-04-30T13:26:22+08:00 ] 127.0.0.1 127.0.0.1 GET /index/sys/t.html
+[ log ] s.com/index/sys/t.html [运行时间：0.120118s][吞吐率：8.33req/s] [内存消耗：1,486.30kb] [文件加载：38]
+[ info ] [ LANG ] F:\ssisuo\ssisuo\webroot\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sys',
+    2 => 't',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 's.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Sys->t[ F:\ssisuo\ssisuo\webroot\application\index\controller\Sys.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\ssisuo\ssisuo\webroot\public/../application/index/view/header.html [ array (
+  0 => 'user',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002930s ] mysql:dbname=ssisuo;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] select * from ssi_user where id=1 [ RunTime:0.001953s ]
+[ sql ] [ SQL ] update ssi_user set `name`='ff222290022f' where id =1 [ RunTime:0.067382s ]
+[ sql ] [ SQL ] select * from ssi_user [ RunTime:0.000977s ]
+
+---------------------------------------------------------------
+[ 2017-04-30T13:26:43+08:00 ] 127.0.0.1 127.0.0.1 GET /index/sys/t.html
+[ log ] s.com/index/sys/t.html [运行时间：0.095703s][吞吐率：10.45req/s] [内存消耗：1,405.15kb] [文件加载：35]
+[ info ] [ LANG ] F:\ssisuo\ssisuo\webroot\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sys',
+    2 => 't',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 's.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Sys->t[ F:\ssisuo\ssisuo\webroot\application\index\controller\Sys.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010743s ] mysql:dbname=ssisuo;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] select * from ssi_user where id=1 [ RunTime:0.000977s ]
+[ sql ] [ SQL ] update ssi_user set `name`='ff222290022f' where id =1 [ RunTime:0.045898s ]
+
+---------------------------------------------------------------
+[ 2017-04-30T13:27:51+08:00 ] 127.0.0.1 127.0.0.1 GET /index/sys/t.html
+[ log ] s.com/index/sys/t.html [运行时间：0.147461s][吞吐率：6.78req/s] [内存消耗：1,515.40kb] [文件加载：40]
+[ info ] [ LANG ] F:\ssisuo\ssisuo\webroot\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sys',
+    2 => 't',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 's.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Sys->t[ F:\ssisuo\ssisuo\webroot\application\index\controller\Sys.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010742s ] mysql:dbname=ssisuo;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] select * from ssi_user where id=1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] update ssi_user set `name`='ff222290022f' where id =1 [ RunTime:0.061523s ]
+[ error ] [0]查询数据有问题[F:\ssisuo\ssisuo\webroot\thinkphp\helper.php:59]
+
+---------------------------------------------------------------
+[ 2017-04-30T13:28:04+08:00 ] 127.0.0.1 127.0.0.1 GET /index/sys/t.html
+[ log ] s.com/index/sys/t.html [运行时间：0.147460s][吞吐率：6.78req/s] [内存消耗：1,515.46kb] [文件加载：40]
+[ info ] [ LANG ] F:\ssisuo\ssisuo\webroot\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sys',
+    2 => 't',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 's.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Sys->t[ F:\ssisuo\ssisuo\webroot\application\index\controller\Sys.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000976s ] mysql:dbname=ssisuo;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] select * from ssi_user where id=1 [ RunTime:0.000976s ]
+[ sql ] [ SQL ] update ssi_user set `name`='ff222290022f' where id =1 [ RunTime:0.035157s ]
+[ error ] [1]查询数据有问题[F:\ssisuo\ssisuo\webroot\thinkphp\helper.php:59]
+
+---------------------------------------------------------------
+[ 2017-04-30T13:28:05+08:00 ] 127.0.0.1 127.0.0.1 GET /index/sys/t.html
+[ log ] s.com/index/sys/t.html [运行时间：0.115234s][吞吐率：8.68req/s] [内存消耗：1,515.46kb] [文件加载：40]
+[ info ] [ LANG ] F:\ssisuo\ssisuo\webroot\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sys',
+    2 => 't',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 's.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Sys->t[ F:\ssisuo\ssisuo\webroot\application\index\controller\Sys.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000977s ] mysql:dbname=ssisuo;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] select * from ssi_user where id=1 [ RunTime:0.002929s ]
+[ sql ] [ SQL ] update ssi_user set `name`='ff222290022f' where id =1 [ RunTime:0.052735s ]
+[ error ] [1]查询数据有问题[F:\ssisuo\ssisuo\webroot\thinkphp\helper.php:59]
+
+---------------------------------------------------------------
+[ 2017-04-30T13:30:20+08:00 ] 127.0.0.1 127.0.0.1 GET /index/sys/t.html
+[ log ] s.com/index/sys/t.html [运行时间：0.077149s][吞吐率：12.96req/s] [内存消耗：1,515.78kb] [文件加载：40]
+[ info ] [ LANG ] F:\ssisuo\ssisuo\webroot\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sys',
+    2 => 't',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 's.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Sys->t[ F:\ssisuo\ssisuo\webroot\application\index\controller\Sys.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000976s ] mysql:dbname=ssisuo;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] select * from ssi_user where id=1 [ RunTime:0.000976s ]
+[ sql ] [ SQL ] update ssi_user set `name`='ff222290022f' where id =1 [ RunTime:0.036133s ]
+
+---------------------------------------------------------------
+[ 2017-04-30T13:31:05+08:00 ] 127.0.0.1 127.0.0.1 GET /index/sys/t.html
+[ log ] s.com/index/sys/t.html [运行时间：0.108399s][吞吐率：9.23req/s] [内存消耗：1,530.08kb] [文件加载：42]
+[ info ] [ LANG ] F:\ssisuo\ssisuo\webroot\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sys',
+    2 => 't',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 's.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Sys->t[ F:\ssisuo\ssisuo\webroot\application\index\controller\Sys.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011719s ] mysql:dbname=ssisuo;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] select * from ssi_user where id=1 [ RunTime:0.000977s ]
+[ sql ] [ SQL ] update ssi_user set `name`='ff222290022f' where id =1 [ RunTime:0.046875s ]
+[ error ] [4096]Argument 4 passed to think\exception\HttpException::__construct() must be of the type array, string given, called in F:\ssisuo\ssisuo\webroot\thinkphp\helper.php on line 523 and defined[F:\ssisuo\ssisuo\webroot\thinkphp\library\think\exception\HttpException.php:19]
+
+---------------------------------------------------------------
+[ 2017-04-30T13:31:25+08:00 ] 127.0.0.1 127.0.0.1 GET /index/sys/t.html
+[ log ] s.com/index/sys/t.html [运行时间：0.099609s][吞吐率：10.04req/s] [内存消耗：1,530.15kb] [文件加载：42]
+[ info ] [ LANG ] F:\ssisuo\ssisuo\webroot\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sys',
+    2 => 't',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 's.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Sys->t[ F:\ssisuo\ssisuo\webroot\application\index\controller\Sys.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000976s ] mysql:dbname=ssisuo;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] select * from ssi_user where id=1 [ RunTime:0.000977s ]
+[ sql ] [ SQL ] update ssi_user set `name`='ff222290022f' where id =1 [ RunTime:0.058593s ]
+[ error ] [4096]Argument 4 passed to think\exception\HttpException::__construct() must be of the type array, string given, called in F:\ssisuo\ssisuo\webroot\thinkphp\helper.php on line 523 and defined[F:\ssisuo\ssisuo\webroot\thinkphp\library\think\exception\HttpException.php:19]
+
+---------------------------------------------------------------
+[ 2017-04-30T13:31:32+08:00 ] 127.0.0.1 127.0.0.1 GET /index/sys/t.html
+[ log ] s.com/index/sys/t.html [运行时间：0.106446s][吞吐率：9.39req/s] [内存消耗：1,530.11kb] [文件加载：42]
+[ info ] [ LANG ] F:\ssisuo\ssisuo\webroot\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sys',
+    2 => 't',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 's.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Sys->t[ F:\ssisuo\ssisuo\webroot\application\index\controller\Sys.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010742s ] mysql:dbname=ssisuo;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] select * from ssi_user where id=1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] update ssi_user set `name`='ff222290022f' where id =1 [ RunTime:0.054688s ]
+[ error ] [4096]Argument 4 passed to think\exception\HttpException::__construct() must be of the type array, string given, called in F:\ssisuo\ssisuo\webroot\thinkphp\helper.php on line 523 and defined[F:\ssisuo\ssisuo\webroot\thinkphp\library\think\exception\HttpException.php:19]
+
+---------------------------------------------------------------
+[ 2017-04-30T13:31:33+08:00 ] 127.0.0.1 127.0.0.1 GET /index/sys/t.html
+[ log ] s.com/index/sys/t.html [运行时间：0.079102s][吞吐率：12.64req/s] [内存消耗：1,530.11kb] [文件加载：42]
+[ info ] [ LANG ] F:\ssisuo\ssisuo\webroot\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sys',
+    2 => 't',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 's.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Sys->t[ F:\ssisuo\ssisuo\webroot\application\index\controller\Sys.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000976s ] mysql:dbname=ssisuo;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] select * from ssi_user where id=1 [ RunTime:0.003906s ]
+[ sql ] [ SQL ] update ssi_user set `name`='ff222290022f' where id =1 [ RunTime:0.034180s ]
+[ error ] [4096]Argument 4 passed to think\exception\HttpException::__construct() must be of the type array, string given, called in F:\ssisuo\ssisuo\webroot\thinkphp\helper.php on line 523 and defined[F:\ssisuo\ssisuo\webroot\thinkphp\library\think\exception\HttpException.php:19]
+
+---------------------------------------------------------------
+[ 2017-04-30T13:31:49+08:00 ] 127.0.0.1 127.0.0.1 GET /index/sys/t.html
+[ log ] s.com/index/sys/t.html [运行时间：0.099610s][吞吐率：10.04req/s] [内存消耗：1,530.34kb] [文件加载：42]
+[ info ] [ LANG ] F:\ssisuo\ssisuo\webroot\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sys',
+    2 => 't',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 's.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Sys->t[ F:\ssisuo\ssisuo\webroot\application\index\controller\Sys.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010742s ] mysql:dbname=ssisuo;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] select * from ssi_user where id=1 [ RunTime:0.000976s ]
+[ sql ] [ SQL ] update ssi_user set `name`='ff222290022f' where id =1 [ RunTime:0.041993s ]
+[ error ] [4096]Argument 4 passed to think\exception\HttpException::__construct() must be of the type array, null given, called in F:\ssisuo\ssisuo\webroot\thinkphp\helper.php on line 523 and defined[F:\ssisuo\ssisuo\webroot\thinkphp\library\think\exception\HttpException.php:19]
+
+---------------------------------------------------------------
+[ 2017-04-30T13:31:50+08:00 ] 127.0.0.1 127.0.0.1 GET /index/sys/t.html
+[ log ] s.com/index/sys/t.html [运行时间：0.089844s][吞吐率：11.13req/s] [内存消耗：1,530.34kb] [文件加载：42]
+[ info ] [ LANG ] F:\ssisuo\ssisuo\webroot\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sys',
+    2 => 't',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 's.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Sys->t[ F:\ssisuo\ssisuo\webroot\application\index\controller\Sys.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000977s ] mysql:dbname=ssisuo;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] select * from ssi_user where id=1 [ RunTime:0.000976s ]
+[ sql ] [ SQL ] update ssi_user set `name`='ff222290022f' where id =1 [ RunTime:0.046875s ]
+[ error ] [4096]Argument 4 passed to think\exception\HttpException::__construct() must be of the type array, null given, called in F:\ssisuo\ssisuo\webroot\thinkphp\helper.php on line 523 and defined[F:\ssisuo\ssisuo\webroot\thinkphp\library\think\exception\HttpException.php:19]
+
+---------------------------------------------------------------
+[ 2017-04-30T13:31:51+08:00 ] 127.0.0.1 127.0.0.1 GET /index/sys/t.html
+[ log ] s.com/index/sys/t.html [运行时间：0.083008s][吞吐率：12.05req/s] [内存消耗：1,530.34kb] [文件加载：42]
+[ info ] [ LANG ] F:\ssisuo\ssisuo\webroot\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sys',
+    2 => 't',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 's.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Sys->t[ F:\ssisuo\ssisuo\webroot\application\index\controller\Sys.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001954s ] mysql:dbname=ssisuo;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] select * from ssi_user where id=1 [ RunTime:0.000977s ]
+[ sql ] [ SQL ] update ssi_user set `name`='ff222290022f' where id =1 [ RunTime:0.039063s ]
+[ error ] [4096]Argument 4 passed to think\exception\HttpException::__construct() must be of the type array, null given, called in F:\ssisuo\ssisuo\webroot\thinkphp\helper.php on line 523 and defined[F:\ssisuo\ssisuo\webroot\thinkphp\library\think\exception\HttpException.php:19]
+
+---------------------------------------------------------------
+[ 2017-04-30T13:32:04+08:00 ] 127.0.0.1 127.0.0.1 GET /index/sys/t.html
+[ log ] s.com/index/sys/t.html [运行时间：0.098633s][吞吐率：10.14req/s] [内存消耗：1,515.78kb] [文件加载：40]
+[ info ] [ LANG ] F:\ssisuo\ssisuo\webroot\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sys',
+    2 => 't',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 's.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Sys->t[ F:\ssisuo\ssisuo\webroot\application\index\controller\Sys.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010742s ] mysql:dbname=ssisuo;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] select * from ssi_user where id=1 [ RunTime:0.000977s ]
+[ sql ] [ SQL ] update ssi_user set `name`='ff222290022f' where id =1 [ RunTime:0.048828s ]
+
+---------------------------------------------------------------
+[ 2017-04-30T14:03:10+08:00 ] 127.0.0.1 127.0.0.1 GET /index/sys/t.html
+[ log ] s.com/index/sys/t.html [运行时间：0.107422s][吞吐率：9.31req/s] [内存消耗：1,515.78kb] [文件加载：40]
+[ info ] [ LANG ] F:\ssisuo\ssisuo\webroot\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sys',
+    2 => 't',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 's.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Sys->t[ F:\ssisuo\ssisuo\webroot\application\index\controller\Sys.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001953s ] mysql:dbname=ssisuo;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] select * from ssi_user where id=1 [ RunTime:0.000976s ]
+[ sql ] [ SQL ] update ssi_user set `name`='ff222290022f' where id =1 [ RunTime:0.059571s ]
+
+---------------------------------------------------------------
+[ 2017-04-30T14:47:46+08:00 ] 127.0.0.1 127.0.0.1 GET /index/sys/t.html
+[ log ] s.com/index/sys/t.html [运行时间：0.063476s][吞吐率：15.75req/s] [内存消耗：1,541.79kb] [文件加载：41]
+[ info ] [ LANG ] F:\ssisuo\ssisuo\webroot\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sys',
+    2 => 't',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 's.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Sys->t[ F:\ssisuo\ssisuo\webroot\application\index\controller\Sys.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001953s ] mysql:dbname=ssisuo;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] select * from ssi_user where id=1 [ RunTime:0.000000s ]
+[ error ] [1]Call to undefined method freefile\data\User::up()[F:\ssisuo\ssisuo\webroot\application\index\controller\Sys.php:25]
+
+---------------------------------------------------------------
+[ 2017-04-30T14:48:06+08:00 ] 127.0.0.1 127.0.0.1 GET /index/sys/t.html
+[ log ] s.com/index/sys/t.html [运行时间：0.050781s][吞吐率：19.69req/s] [内存消耗：1,541.77kb] [文件加载：41]
+[ info ] [ LANG ] F:\ssisuo\ssisuo\webroot\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sys',
+    2 => 't',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 's.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Sys->t[ F:\ssisuo\ssisuo\webroot\application\index\controller\Sys.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010742s ] mysql:dbname=ssisuo;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] select * from ssi_user where id=1 [ RunTime:0.000976s ]
+[ error ] [1]Call to private method freefile\data\G::upOne() from context 'app\index\controller\Sys'[F:\ssisuo\ssisuo\webroot\application\index\controller\Sys.php:25]
+
+---------------------------------------------------------------
+[ 2017-04-30T14:49:02+08:00 ] 127.0.0.1 127.0.0.1 GET /index/sys/t.html
+[ log ] s.com/index/sys/t.html [运行时间：0.084961s][吞吐率：11.77req/s] [内存消耗：1,520.38kb] [文件加载：40]
+[ info ] [ LANG ] F:\ssisuo\ssisuo\webroot\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sys',
+    2 => 't',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 's.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Sys->t[ F:\ssisuo\ssisuo\webroot\application\index\controller\Sys.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001954s ] mysql:dbname=ssisuo;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] select * from ssi_user where id=1 [ RunTime:0.001953s ]
+[ sql ] [ SQL ] update ssi_user set `name`='ff222290022f' where id =1 [ RunTime:0.037110s ]
+
+---------------------------------------------------------------
+[ 2017-04-30T14:50:00+08:00 ] 127.0.0.1 127.0.0.1 GET /index/sys/t.html
+[ log ] s.com/index/sys/t.html [运行时间：0.084961s][吞吐率：11.77req/s] [内存消耗：1,520.75kb] [文件加载：40]
+[ info ] [ LANG ] F:\ssisuo\ssisuo\webroot\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sys',
+    2 => 't',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 's.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Sys->t[ F:\ssisuo\ssisuo\webroot\application\index\controller\Sys.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000976s ] mysql:dbname=ssisuo;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] select * from ssi_user where id=1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] update ssi_user set `name`='ff222290022f' where id =1 [ RunTime:0.042968s ]
+
+---------------------------------------------------------------
+[ 2017-04-30T14:50:35+08:00 ] 127.0.0.1 127.0.0.1 GET /index/sys/t.html
+[ log ] s.com/index/sys/t.html [运行时间：0.081055s][吞吐率：12.34req/s] [内存消耗：1,521.00kb] [文件加载：40]
+[ info ] [ LANG ] F:\ssisuo\ssisuo\webroot\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sys',
+    2 => 't',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 's.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Sys->t[ F:\ssisuo\ssisuo\webroot\application\index\controller\Sys.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010742s ] mysql:dbname=ssisuo;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] select * from ssi_user where id=1 [ RunTime:0.000977s ]
+[ sql ] [ SQL ] update ssi_user set `name`='ff222290022f' where id =1 [ RunTime:0.029297s ]
+
+---------------------------------------------------------------
+[ 2017-04-30T14:50:54+08:00 ] 127.0.0.1 127.0.0.1 GET /index/sys/t.html
+[ log ] s.com/index/sys/t.html [运行时间：0.167969s][吞吐率：5.95req/s] [内存消耗：1,530.20kb] [文件加载：42]
+[ info ] [ LANG ] F:\ssisuo\ssisuo\webroot\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sys',
+    2 => 't',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 's.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Sys->t[ F:\ssisuo\ssisuo\webroot\application\index\controller\Sys.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000977s ] mysql:dbname=ssisuo;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] select * from ssi_user where id=1 [ RunTime:0.000977s ]
+[ sql ] [ SQL ] update ssi_user set `name`='ff222290022f' where id =1 [ RunTime:0.071289s ]
+[ error ] [10501]SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'limit  order by' at line 1[F:\ssisuo\ssisuo\webroot\thinkphp\library\think\db\Connection.php:399]
+
+---------------------------------------------------------------
+[ 2017-04-30T14:53:50+08:00 ] 127.0.0.1 127.0.0.1 GET /index/sys/t.html
+[ log ] s.com/index/sys/t.html [运行时间：0.110352s][吞吐率：9.06req/s] [内存消耗：1,530.09kb] [文件加载：42]
+[ info ] [ LANG ] F:\ssisuo\ssisuo\webroot\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sys',
+    2 => 't',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 's.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Sys->t[ F:\ssisuo\ssisuo\webroot\application\index\controller\Sys.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010742s ] mysql:dbname=ssisuo;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] select * from ssi_user where id=1 [ RunTime:0.000976s ]
+[ sql ] [ SQL ] update ssi_user set `name`='ff222290022f' where id =1 [ RunTime:0.055664s ]
+[ error ] [10501]SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'limit  order by' at line 1[F:\ssisuo\ssisuo\webroot\thinkphp\library\think\db\Connection.php:399]
+
+---------------------------------------------------------------
+[ 2017-04-30T14:56:56+08:00 ] 127.0.0.1 127.0.0.1 GET /index/sys/t.html
+[ log ] s.com/index/sys/t.html [运行时间：0.082031s][吞吐率：12.19req/s] [内存消耗：1,491.36kb] [文件加载：38]
+[ info ] [ LANG ] F:\ssisuo\ssisuo\webroot\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sys',
+    2 => 't',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 's.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Sys->t[ F:\ssisuo\ssisuo\webroot\application\index\controller\Sys.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\ssisuo\ssisuo\webroot\public/../application/index/view/header.html [ array (
+  0 => 'user',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000977s ] mysql:dbname=ssisuo;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] select * from ssi_user where id=1 [ RunTime:0.000977s ]
+[ sql ] [ SQL ] update ssi_user set `name`='ff222290022f' where id =1 [ RunTime:0.027343s ]
+[ sql ] [ SQL ] select * from ssi_user [ RunTime:0.000977s ]
+
+---------------------------------------------------------------
+[ 2017-04-30T14:57:12+08:00 ] 127.0.0.1 127.0.0.1 GET /index/sys/t.html
+[ log ] s.com/index/sys/t.html [运行时间：0.147461s][吞吐率：6.78req/s] [内存消耗：1,491.36kb] [文件加载：38]
+[ info ] [ LANG ] F:\ssisuo\ssisuo\webroot\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sys',
+    2 => 't',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 's.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Sys->t[ F:\ssisuo\ssisuo\webroot\application\index\controller\Sys.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\ssisuo\ssisuo\webroot\public/../application/index/view/header.html [ array (
+  0 => 'user',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000977s ] mysql:dbname=ssisuo;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] select * from ssi_user where id=1 [ RunTime:0.000977s ]
+[ sql ] [ SQL ] update ssi_user set `name`='ff290022f' where id =1 [ RunTime:0.108398s ]
+[ sql ] [ SQL ] select * from ssi_user [ RunTime:0.000977s ]
+
+---------------------------------------------------------------
+[ 2017-04-30T14:58:31+08:00 ] 127.0.0.1 127.0.0.1 GET /index/sys/t.html
+[ log ] s.com/index/sys/t.html [运行时间：0.041992s][吞吐率：23.81req/s] [内存消耗：1,544.34kb] [文件加载：41]
+[ info ] [ LANG ] F:\ssisuo\ssisuo\webroot\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sys',
+    2 => 't',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 's.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Sys->t[ F:\ssisuo\ssisuo\webroot\application\index\controller\Sys.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000976s ] mysql:dbname=ssisuo;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] select * from ssi_user where id=1 [ RunTime:0.000976s ]
+[ error ] [1]Call to undefined method freefile\data\User::up()[F:\ssisuo\ssisuo\webroot\extend\freefile\data\G.php:103]
+
+---------------------------------------------------------------
+[ 2017-04-30T14:59:35+08:00 ] 127.0.0.1 127.0.0.1 GET /index/sys/t.html
+[ log ] s.com/index/sys/t.html [运行时间：0.125000s][吞吐率：8.00req/s] [内存消耗：1,491.58kb] [文件加载：38]
+[ info ] [ LANG ] F:\ssisuo\ssisuo\webroot\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sys',
+    2 => 't',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 's.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Sys->t[ F:\ssisuo\ssisuo\webroot\application\index\controller\Sys.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\ssisuo\ssisuo\webroot\public/../application/index/view/header.html [ array (
+  0 => 'user',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000976s ] mysql:dbname=ssisuo;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] select * from ssi_user where id=1 [ RunTime:0.000976s ]
+[ sql ] [ SQL ] update ssi_user set name = ''and mdpsd = ''and last_login_time = ''and limit_level = ''and group_name = ''and member_id = ''and customer_id = ''and head_icon = '' where id =1 [ RunTime:0.084961s ]
+[ sql ] [ SQL ] select * from ssi_user [ RunTime:0.000977s ]
+
+---------------------------------------------------------------
+[ 2017-04-30T15:00:18+08:00 ] 127.0.0.1 127.0.0.1 GET /index/sys/t.html
+[ log ] s.com/index/sys/t.html [运行时间：0.121094s][吞吐率：8.26req/s] [内存消耗：1,491.84kb] [文件加载：38]
+[ info ] [ LANG ] F:\ssisuo\ssisuo\webroot\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sys',
+    2 => 't',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 's.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Sys->t[ F:\ssisuo\ssisuo\webroot\application\index\controller\Sys.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\ssisuo\ssisuo\webroot\public/../application/index/view/header.html [ array (
+  0 => 'user',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000977s ] mysql:dbname=ssisuo;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] select * from ssi_user where id=1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] update ssi_user set name = ''and mdpsd = ''and last_login_time = ''and limit_level = ''and group_name = ''and member_id = ''and customer_id = ''and head_icon = '' where id =1 [ RunTime:0.040039s ]
+[ sql ] [ SQL ] select * from ssi_user [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-04-30T15:00:55+08:00 ] 127.0.0.1 127.0.0.1 GET /index/sys/t.html
+[ log ] s.com/index/sys/t.html [运行时间：0.134765s][吞吐率：7.42req/s] [内存消耗：1,491.88kb] [文件加载：38]
+[ info ] [ LANG ] F:\ssisuo\ssisuo\webroot\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sys',
+    2 => 't',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 's.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Sys->t[ F:\ssisuo\ssisuo\webroot\application\index\controller\Sys.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\ssisuo\ssisuo\webroot\public/../application/index/view/header.html [ array (
+  0 => 'user',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000977s ] mysql:dbname=ssisuo;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] select * from ssi_user where id=1 [ RunTime:0.001953s ]
+[ sql ] [ SQL ] update ssi_user set name = ''and mdpsd = ''and last_login_time = ''and limit_level = ''and group_name = ''and member_id = ''and customer_id = ''and head_icon = '' where id =1 [ RunTime:0.061524s ]
+[ sql ] [ SQL ] select * from ssi_user [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-04-30T15:00:56+08:00 ] 127.0.0.1 127.0.0.1 GET /index/sys/t.html
+[ log ] s.com/index/sys/t.html [运行时间：0.185547s][吞吐率：5.39req/s] [内存消耗：1,491.88kb] [文件加载：38]
+[ info ] [ LANG ] F:\ssisuo\ssisuo\webroot\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sys',
+    2 => 't',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 's.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Sys->t[ F:\ssisuo\ssisuo\webroot\application\index\controller\Sys.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\ssisuo\ssisuo\webroot\public/../application/index/view/header.html [ array (
+  0 => 'user',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000977s ] mysql:dbname=ssisuo;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] select * from ssi_user where id=1 [ RunTime:0.001953s ]
+[ sql ] [ SQL ] update ssi_user set name = ''and mdpsd = ''and last_login_time = ''and limit_level = ''and group_name = ''and member_id = ''and customer_id = ''and head_icon = '' where id =1 [ RunTime:0.101563s ]
+[ sql ] [ SQL ] select * from ssi_user [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-04-30T15:01:32+08:00 ] 127.0.0.1 127.0.0.1 GET /index/sys/t.html
+[ log ] s.com/index/sys/t.html [运行时间：0.117188s][吞吐率：8.53req/s] [内存消耗：1,491.83kb] [文件加载：38]
+[ info ] [ LANG ] F:\ssisuo\ssisuo\webroot\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sys',
+    2 => 't',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 's.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Sys->t[ F:\ssisuo\ssisuo\webroot\application\index\controller\Sys.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\ssisuo\ssisuo\webroot\public/../application/index/view/header.html [ array (
+  0 => 'user',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000977s ] mysql:dbname=ssisuo;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] select * from ssi_user where id=1 [ RunTime:0.000976s ]
+[ sql ] [ SQL ] update ssi_user set name = ''and mdpsd = ''and last_login_time = ''and limit_level = ''and group_name = ''and member_id = ''and customer_id = ''and head_icon = '' where id =1 [ RunTime:0.044922s ]
+[ sql ] [ SQL ] select * from ssi_user [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-04-30T15:01:59+08:00 ] 127.0.0.1 127.0.0.1 GET /index/sys/t.html
+[ log ] s.com/index/sys/t.html [运行时间：0.121094s][吞吐率：8.26req/s] [内存消耗：1,491.84kb] [文件加载：38]
+[ info ] [ LANG ] F:\ssisuo\ssisuo\webroot\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sys',
+    2 => 't',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 's.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Sys->t[ F:\ssisuo\ssisuo\webroot\application\index\controller\Sys.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\ssisuo\ssisuo\webroot\public/../application/index/view/header.html [ array (
+  0 => 'user',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010742s ] mysql:dbname=ssisuo;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] select * from ssi_user where id=1 [ RunTime:0.000976s ]
+[ sql ] [ SQL ] update ssi_user set name = ''and mdpsd = ''and last_login_time = ''and limit_level = ''and group_name = ''and member_id = ''and customer_id = ''and head_icon = '' where id =1 [ RunTime:0.066407s ]
+[ sql ] [ SQL ] select * from ssi_user [ RunTime:0.000976s ]
+
+---------------------------------------------------------------
+[ 2017-04-30T15:03:09+08:00 ] 127.0.0.1 127.0.0.1 GET /index/sys/t.html
+[ log ] s.com/index/sys/t.html [运行时间：0.098633s][吞吐率：10.14req/s] [内存消耗：1,491.97kb] [文件加载：38]
+[ info ] [ LANG ] F:\ssisuo\ssisuo\webroot\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sys',
+    2 => 't',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 's.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Sys->t[ F:\ssisuo\ssisuo\webroot\application\index\controller\Sys.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\ssisuo\ssisuo\webroot\public/../application/index/view/header.html [ array (
+  0 => 'user',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000976s ] mysql:dbname=ssisuo;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] select * from ssi_user where id=1 [ RunTime:0.000976s ]
+[ sql ] [ SQL ] update ssi_user set name = ''and mdpsd = ''and last_login_time = ''and limit_level = ''and group_name = ''and member_id = ''and customer_id = ''and head_icon = '' where id =1 [ RunTime:0.049805s ]
+[ sql ] [ SQL ] select * from ssi_user [ RunTime:0.000976s ]
+
+---------------------------------------------------------------
+[ 2017-04-30T15:03:36+08:00 ] 127.0.0.1 127.0.0.1 GET /index/sys/t.html
+[ log ] s.com/index/sys/t.html [运行时间：0.065430s][吞吐率：15.28req/s] [内存消耗：1,492.33kb] [文件加载：38]
+[ info ] [ LANG ] F:\ssisuo\ssisuo\webroot\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sys',
+    2 => 't',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 's.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Sys->t[ F:\ssisuo\ssisuo\webroot\application\index\controller\Sys.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\ssisuo\ssisuo\webroot\public/../application/index/view/header.html [ array (
+  0 => 'user',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000977s ] mysql:dbname=ssisuo;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] select * from ssi_user where id=1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] update ssi_user set name = ''and mdpsd = ''and last_login_time = ''and limit_level = ''and group_name = ''and member_id = ''and customer_id = ''and head_icon = '' where id =1 [ RunTime:0.023438s ]
+[ sql ] [ SQL ] select * from ssi_user [ RunTime:0.000976s ]
+
+---------------------------------------------------------------
+[ 2017-04-30T15:03:54+08:00 ] 127.0.0.1 127.0.0.1 GET /index/sys/t.html
+[ log ] s.com/index/sys/t.html [运行时间：0.046875s][吞吐率：21.33req/s] [内存消耗：1,531.10kb] [文件加载：42]
+[ info ] [ LANG ] F:\ssisuo\ssisuo\webroot\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sys',
+    2 => 't',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 's.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Sys->t[ F:\ssisuo\ssisuo\webroot\application\index\controller\Sys.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000976s ] mysql:dbname=ssisuo;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] select * from ssi_user where id=1 [ RunTime:0.000976s ]
+[ error ] [10501]SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'group_name = ''and member_id = ''and customer_id = ''and head_icon = '' where id' at line 1[F:\ssisuo\ssisuo\webroot\thinkphp\library\think\db\Connection.php:399]
+
+---------------------------------------------------------------
+[ 2017-04-30T15:05:36+08:00 ] 127.0.0.1 127.0.0.1 GET /index/sys/t.html
+[ log ] s.com/index/sys/t.html [运行时间：0.108398s][吞吐率：9.23req/s] [内存消耗：1,492.06kb] [文件加载：38]
+[ info ] [ LANG ] F:\ssisuo\ssisuo\webroot\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sys',
+    2 => 't',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 's.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Sys->t[ F:\ssisuo\ssisuo\webroot\application\index\controller\Sys.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\ssisuo\ssisuo\webroot\public/../application/index/view/header.html [ array (
+  0 => 'user',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011719s ] mysql:dbname=ssisuo;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] select * from ssi_user where id=1 [ RunTime:0.000977s ]
+[ sql ] [ SQL ] update ssi_user set limit_level = 2 where id =1 [ RunTime:0.055664s ]
+[ sql ] [ SQL ] select * from ssi_user [ RunTime:0.000977s ]
+
+---------------------------------------------------------------
+[ 2017-04-30T15:06:01+08:00 ] 127.0.0.1 127.0.0.1 GET /index/sys/t.html
+[ log ] s.com/index/sys/t.html [运行时间：0.113282s][吞吐率：8.83req/s] [内存消耗：1,492.13kb] [文件加载：38]
+[ info ] [ LANG ] F:\ssisuo\ssisuo\webroot\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sys',
+    2 => 't',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 's.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Sys->t[ F:\ssisuo\ssisuo\webroot\application\index\controller\Sys.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\ssisuo\ssisuo\webroot\public/../application/index/view/header.html [ array (
+  0 => 'user',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010742s ] mysql:dbname=ssisuo;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] select * from ssi_user where id=1 [ RunTime:0.000977s ]
+[ sql ] [ SQL ] update ssi_user set name = 'freefile' where id =1 [ RunTime:0.059570s ]
+[ sql ] [ SQL ] select * from ssi_user [ RunTime:0.000977s ]
+
+---------------------------------------------------------------
+[ 2017-04-30T15:06:59+08:00 ] 127.0.0.1 127.0.0.1 GET /index/sys/t.html
+[ log ] s.com/index/sys/t.html [运行时间：0.067383s][吞吐率：14.84req/s] [内存消耗：1,529.95kb] [文件加载：42]
+[ info ] [ LANG ] F:\ssisuo\ssisuo\webroot\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sys',
+    2 => 't',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 's.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Sys->t[ F:\ssisuo\ssisuo\webroot\application\index\controller\Sys.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010742s ] mysql:dbname=ssisuo;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] select * from ssi_user where id=1 [ RunTime:0.000977s ]
+[ error ] [10501]SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'where id =1' at line 1[F:\ssisuo\ssisuo\webroot\thinkphp\library\think\db\Connection.php:399]
+
+---------------------------------------------------------------
+[ 2017-04-30T15:07:42+08:00 ] 127.0.0.1 127.0.0.1 GET /index/sys/t.html
+[ log ] s.com/index/sys/t.html [运行时间：0.064453s][吞吐率：15.52req/s] [内存消耗：1,533.63kb] [文件加载：41]
+[ info ] [ LANG ] F:\ssisuo\ssisuo\webroot\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sys',
+    2 => 't',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 's.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Sys->t[ F:\ssisuo\ssisuo\webroot\application\index\controller\Sys.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010742s ] mysql:dbname=ssisuo;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] select * from ssi_user where id=1 [ RunTime:0.000977s ]
+[ error ] [8]Array to string conversion[F:\ssisuo\ssisuo\webroot\extend\freefile\data\G.php:139]
+
+---------------------------------------------------------------
+[ 2017-04-30T15:08:16+08:00 ] 127.0.0.1 127.0.0.1 GET /index/sys/t.html
+[ log ] s.com/index/sys/t.html [运行时间：0.047851s][吞吐率：20.90req/s] [内存消耗：1,533.87kb] [文件加载：41]
+[ info ] [ LANG ] F:\ssisuo\ssisuo\webroot\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sys',
+    2 => 't',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 's.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Sys->t[ F:\ssisuo\ssisuo\webroot\application\index\controller\Sys.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000977s ] mysql:dbname=ssisuo;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] select * from ssi_user where id=1 [ RunTime:0.000976s ]
+[ error ] [8]Array to string conversion[F:\ssisuo\ssisuo\webroot\extend\freefile\data\G.php:139]
+
+---------------------------------------------------------------
+[ 2017-04-30T15:08:17+08:00 ] 127.0.0.1 127.0.0.1 GET /index/sys/t.html
+[ log ] s.com/index/sys/t.html [运行时间：0.062500s][吞吐率：16.00req/s] [内存消耗：1,533.87kb] [文件加载：41]
+[ info ] [ LANG ] F:\ssisuo\ssisuo\webroot\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sys',
+    2 => 't',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 's.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Sys->t[ F:\ssisuo\ssisuo\webroot\application\index\controller\Sys.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010742s ] mysql:dbname=ssisuo;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] select * from ssi_user where id=1 [ RunTime:0.000976s ]
+[ error ] [8]Array to string conversion[F:\ssisuo\ssisuo\webroot\extend\freefile\data\G.php:139]
+
+---------------------------------------------------------------
+[ 2017-04-30T15:08:25+08:00 ] 127.0.0.1 127.0.0.1 GET /index/sys/t.html
+[ log ] s.com/index/sys/t.html [运行时间：0.046875s][吞吐率：21.33req/s] [内存消耗：1,526.45kb] [文件加载：40]
+[ info ] [ LANG ] F:\ssisuo\ssisuo\webroot\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sys',
+    2 => 't',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 's.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Sys->t[ F:\ssisuo\ssisuo\webroot\application\index\controller\Sys.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000976s ] mysql:dbname=ssisuo;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] select * from ssi_user where id=1 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-04-30T15:08:44+08:00 ] 127.0.0.1 127.0.0.1 GET /index/sys/t.html
+[ log ] s.com/index/sys/t.html [运行时间：0.056641s][吞吐率：17.66req/s] [内存消耗：1,533.66kb] [文件加载：41]
+[ info ] [ LANG ] F:\ssisuo\ssisuo\webroot\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sys',
+    2 => 't',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 's.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Sys->t[ F:\ssisuo\ssisuo\webroot\application\index\controller\Sys.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011719s ] mysql:dbname=ssisuo;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] select * from ssi_user where id=1 [ RunTime:0.000977s ]
+[ error ] [8]Array to string conversion[F:\ssisuo\ssisuo\webroot\extend\freefile\data\G.php:139]
+
+---------------------------------------------------------------
+[ 2017-04-30T15:08:53+08:00 ] 127.0.0.1 127.0.0.1 GET /index/sys/t.html
+[ log ] s.com/index/sys/t.html [运行时间：0.061523s][吞吐率：16.25req/s] [内存消耗：1,526.45kb] [文件加载：40]
+[ info ] [ LANG ] F:\ssisuo\ssisuo\webroot\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sys',
+    2 => 't',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 's.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Sys->t[ F:\ssisuo\ssisuo\webroot\application\index\controller\Sys.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011719s ] mysql:dbname=ssisuo;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] select * from ssi_user where id=1 [ RunTime:0.000977s ]
+
+---------------------------------------------------------------
+[ 2017-04-30T15:19:10+08:00 ] 127.0.0.1 127.0.0.1 GET /index/sys/t.html
+[ log ] s.com/index/sys/t.html [运行时间：0.059571s][吞吐率：16.79req/s] [内存消耗：1,538.27kb] [文件加载：42]
+[ info ] [ LANG ] F:\ssisuo\ssisuo\webroot\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sys',
+    2 => 't',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 's.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Sys->t[ F:\ssisuo\ssisuo\webroot\application\index\controller\Sys.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011719s ] mysql:dbname=ssisuo;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] select * from ssi_user where id=1 [ RunTime:0.000977s ]
+[ error ] [10501]SQLSTATE[21S01]: Insert value list does not match column list: 1136 Column count doesn't match value count at row 1[F:\ssisuo\ssisuo\webroot\thinkphp\library\think\db\Connection.php:399]
+
+---------------------------------------------------------------
+[ 2017-04-30T15:21:23+08:00 ] 127.0.0.1 127.0.0.1 GET /index/sys/t.html
+[ log ] s.com/index/sys/t.html [运行时间：0.061524s][吞吐率：16.25req/s] [内存消耗：1,538.13kb] [文件加载：42]
+[ info ] [ LANG ] F:\ssisuo\ssisuo\webroot\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sys',
+    2 => 't',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 's.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Sys->t[ F:\ssisuo\ssisuo\webroot\application\index\controller\Sys.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011719s ] mysql:dbname=ssisuo;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] select * from ssi_user where id=1 [ RunTime:0.000977s ]
+[ error ] [10501]SQLSTATE[21S01]: Insert value list does not match column list: 1136 Column count doesn't match value count at row 1[F:\ssisuo\ssisuo\webroot\thinkphp\library\think\db\Connection.php:399]
+
+---------------------------------------------------------------
+[ 2017-04-30T15:21:51+08:00 ] 127.0.0.1 127.0.0.1 GET /index/sys/t.html
+[ log ] s.com/index/sys/t.html [运行时间：0.061523s][吞吐率：16.25req/s] [内存消耗：1,538.38kb] [文件加载：42]
+[ info ] [ LANG ] F:\ssisuo\ssisuo\webroot\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sys',
+    2 => 't',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 's.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Sys->t[ F:\ssisuo\ssisuo\webroot\application\index\controller\Sys.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011719s ] mysql:dbname=ssisuo;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] select * from ssi_user where id=1 [ RunTime:0.000977s ]
+[ error ] [10501]SQLSTATE[21S01]: Insert value list does not match column list: 1136 Column count doesn't match value count at row 1[F:\ssisuo\ssisuo\webroot\thinkphp\library\think\db\Connection.php:399]
+
+---------------------------------------------------------------
+[ 2017-04-30T15:22:17+08:00 ] 127.0.0.1 127.0.0.1 GET /index/sys/t.html
+[ log ] s.com/index/sys/t.html [运行时间：0.062500s][吞吐率：16.00req/s] [内存消耗：1,538.28kb] [文件加载：42]
+[ info ] [ LANG ] F:\ssisuo\ssisuo\webroot\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sys',
+    2 => 't',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 's.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Sys->t[ F:\ssisuo\ssisuo\webroot\application\index\controller\Sys.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010742s ] mysql:dbname=ssisuo;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] select * from ssi_user where id=1 [ RunTime:0.000976s ]
+[ error ] [10501]SQLSTATE[21S01]: Insert value list does not match column list: 1136 Column count doesn't match value count at row 1[F:\ssisuo\ssisuo\webroot\thinkphp\library\think\db\Connection.php:399]
+
+---------------------------------------------------------------
+[ 2017-04-30T15:25:09+08:00 ] 127.0.0.1 127.0.0.1 GET /index/sys/t.html
+[ log ] s.com/index/sys/t.html [运行时间：0.056640s][吞吐率：17.66req/s] [内存消耗：1,538.57kb] [文件加载：42]
+[ info ] [ LANG ] F:\ssisuo\ssisuo\webroot\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sys',
+    2 => 't',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 's.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Sys->t[ F:\ssisuo\ssisuo\webroot\application\index\controller\Sys.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010742s ] mysql:dbname=ssisuo;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] select * from ssi_user where id=1 [ RunTime:0.000976s ]
+[ error ] [10501]SQLSTATE[21S01]: Insert value list does not match column list: 1136 Column count doesn't match value count at row 1[F:\ssisuo\ssisuo\webroot\thinkphp\library\think\db\Connection.php:399]
+
+---------------------------------------------------------------
+[ 2017-04-30T15:25:12+08:00 ] 127.0.0.1 127.0.0.1 GET /index/sys/t.html
+[ log ] s.com/index/sys/t.html [运行时间：0.050782s][吞吐率：19.69req/s] [内存消耗：1,538.57kb] [文件加载：42]
+[ info ] [ LANG ] F:\ssisuo\ssisuo\webroot\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sys',
+    2 => 't',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 's.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Sys->t[ F:\ssisuo\ssisuo\webroot\application\index\controller\Sys.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000976s ] mysql:dbname=ssisuo;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] select * from ssi_user where id=1 [ RunTime:0.000976s ]
+[ error ] [10501]SQLSTATE[21S01]: Insert value list does not match column list: 1136 Column count doesn't match value count at row 1[F:\ssisuo\ssisuo\webroot\thinkphp\library\think\db\Connection.php:399]
+
+---------------------------------------------------------------
+[ 2017-04-30T15:25:13+08:00 ] 127.0.0.1 127.0.0.1 GET /index/sys/t.html
+[ log ] s.com/index/sys/t.html [运行时间：0.048828s][吞吐率：20.48req/s] [内存消耗：1,538.57kb] [文件加载：42]
+[ info ] [ LANG ] F:\ssisuo\ssisuo\webroot\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sys',
+    2 => 't',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 's.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Sys->t[ F:\ssisuo\ssisuo\webroot\application\index\controller\Sys.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000977s ] mysql:dbname=ssisuo;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] select * from ssi_user where id=1 [ RunTime:0.001953s ]
+[ error ] [10501]SQLSTATE[21S01]: Insert value list does not match column list: 1136 Column count doesn't match value count at row 1[F:\ssisuo\ssisuo\webroot\thinkphp\library\think\db\Connection.php:399]
+
+---------------------------------------------------------------
+[ 2017-04-30T15:25:31+08:00 ] 127.0.0.1 127.0.0.1 GET /index/sys/t.html
+[ log ] s.com/index/sys/t.html [运行时间：0.057617s][吞吐率：17.36req/s] [内存消耗：1,538.64kb] [文件加载：42]
+[ info ] [ LANG ] F:\ssisuo\ssisuo\webroot\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sys',
+    2 => 't',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 's.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Sys->t[ F:\ssisuo\ssisuo\webroot\application\index\controller\Sys.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010742s ] mysql:dbname=ssisuo;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] select * from ssi_user where id=1 [ RunTime:0.000976s ]
+[ error ] [10501]SQLSTATE[21S01]: Insert value list does not match column list: 1136 Column count doesn't match value count at row 1[F:\ssisuo\ssisuo\webroot\thinkphp\library\think\db\Connection.php:399]
+
+---------------------------------------------------------------
+[ 2017-04-30T15:25:32+08:00 ] 127.0.0.1 127.0.0.1 GET /index/sys/t.html
+[ log ] s.com/index/sys/t.html [运行时间：0.067383s][吞吐率：14.84req/s] [内存消耗：1,538.64kb] [文件加载：42]
+[ info ] [ LANG ] F:\ssisuo\ssisuo\webroot\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sys',
+    2 => 't',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 's.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Sys->t[ F:\ssisuo\ssisuo\webroot\application\index\controller\Sys.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010743s ] mysql:dbname=ssisuo;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] select * from ssi_user where id=1 [ RunTime:0.000977s ]
+[ error ] [10501]SQLSTATE[21S01]: Insert value list does not match column list: 1136 Column count doesn't match value count at row 1[F:\ssisuo\ssisuo\webroot\thinkphp\library\think\db\Connection.php:399]
+
+---------------------------------------------------------------
+[ 2017-04-30T15:25:45+08:00 ] 127.0.0.1 127.0.0.1 GET /index/sys/t.html
+[ log ] s.com/index/sys/t.html [运行时间：0.062500s][吞吐率：16.00req/s] [内存消耗：1,538.64kb] [文件加载：42]
+[ info ] [ LANG ] F:\ssisuo\ssisuo\webroot\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sys',
+    2 => 't',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 's.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Sys->t[ F:\ssisuo\ssisuo\webroot\application\index\controller\Sys.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010742s ] mysql:dbname=ssisuo;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] select * from ssi_user where id=1 [ RunTime:0.000977s ]
+[ error ] [10501]SQLSTATE[21S01]: Insert value list does not match column list: 1136 Column count doesn't match value count at row 1[F:\ssisuo\ssisuo\webroot\thinkphp\library\think\db\Connection.php:399]
+
+---------------------------------------------------------------
+[ 2017-04-30T15:26:11+08:00 ] 127.0.0.1 127.0.0.1 GET /index/sys/t.html
+[ log ] s.com/index/sys/t.html [运行时间：0.046875s][吞吐率：21.33req/s] [内存消耗：1,538.59kb] [文件加载：42]
+[ info ] [ LANG ] F:\ssisuo\ssisuo\webroot\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sys',
+    2 => 't',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 's.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Sys->t[ F:\ssisuo\ssisuo\webroot\application\index\controller\Sys.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001954s ] mysql:dbname=ssisuo;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] select * from ssi_user where id=1 [ RunTime:0.000000s ]
+[ error ] [10501]SQLSTATE[21S01]: Insert value list does not match column list: 1136 Column count doesn't match value count at row 1[F:\ssisuo\ssisuo\webroot\thinkphp\library\think\db\Connection.php:399]
+
+---------------------------------------------------------------
+[ 2017-04-30T15:26:32+08:00 ] 127.0.0.1 127.0.0.1 GET /index/sys/t.html
+[ log ] s.com/index/sys/t.html [运行时间：0.047851s][吞吐率：20.90req/s] [内存消耗：1,538.59kb] [文件加载：42]
+[ info ] [ LANG ] F:\ssisuo\ssisuo\webroot\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sys',
+    2 => 't',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 's.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Sys->t[ F:\ssisuo\ssisuo\webroot\application\index\controller\Sys.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000977s ] mysql:dbname=ssisuo;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] select * from ssi_user where id=1 [ RunTime:0.000976s ]
+[ error ] [10501]SQLSTATE[21S01]: Insert value list does not match column list: 1136 Column count doesn't match value count at row 1[F:\ssisuo\ssisuo\webroot\thinkphp\library\think\db\Connection.php:399]
+
+---------------------------------------------------------------
+[ 2017-04-30T15:26:33+08:00 ] 127.0.0.1 127.0.0.1 GET /index/sys/t.html
+[ log ] s.com/index/sys/t.html [运行时间：0.048828s][吞吐率：20.48req/s] [内存消耗：1,538.59kb] [文件加载：42]
+[ info ] [ LANG ] F:\ssisuo\ssisuo\webroot\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sys',
+    2 => 't',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 's.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Sys->t[ F:\ssisuo\ssisuo\webroot\application\index\controller\Sys.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=ssisuo;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] select * from ssi_user where id=1 [ RunTime:0.000976s ]
+[ error ] [10501]SQLSTATE[21S01]: Insert value list does not match column list: 1136 Column count doesn't match value count at row 1[F:\ssisuo\ssisuo\webroot\thinkphp\library\think\db\Connection.php:399]
+
+---------------------------------------------------------------
+[ 2017-04-30T15:26:34+08:00 ] 127.0.0.1 127.0.0.1 GET /index/sys/t.html
+[ log ] s.com/index/sys/t.html [运行时间：0.053711s][吞吐率：18.62req/s] [内存消耗：1,538.59kb] [文件加载：42]
+[ info ] [ LANG ] F:\ssisuo\ssisuo\webroot\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sys',
+    2 => 't',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 's.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Sys->t[ F:\ssisuo\ssisuo\webroot\application\index\controller\Sys.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000977s ] mysql:dbname=ssisuo;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] select * from ssi_user where id=1 [ RunTime:0.000976s ]
+[ error ] [10501]SQLSTATE[21S01]: Insert value list does not match column list: 1136 Column count doesn't match value count at row 1[F:\ssisuo\ssisuo\webroot\thinkphp\library\think\db\Connection.php:399]
+
+---------------------------------------------------------------
+[ 2017-04-30T15:26:34+08:00 ] 127.0.0.1 127.0.0.1 GET /index/sys/t.html
+[ log ] s.com/index/sys/t.html [运行时间：0.051757s][吞吐率：19.32req/s] [内存消耗：1,538.59kb] [文件加载：42]
+[ info ] [ LANG ] F:\ssisuo\ssisuo\webroot\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sys',
+    2 => 't',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 's.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Sys->t[ F:\ssisuo\ssisuo\webroot\application\index\controller\Sys.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000977s ] mysql:dbname=ssisuo;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] select * from ssi_user where id=1 [ RunTime:0.000977s ]
+[ error ] [10501]SQLSTATE[21S01]: Insert value list does not match column list: 1136 Column count doesn't match value count at row 1[F:\ssisuo\ssisuo\webroot\thinkphp\library\think\db\Connection.php:399]
+
+---------------------------------------------------------------
+[ 2017-04-30T15:27:01+08:00 ] 127.0.0.1 127.0.0.1 GET /index/sys/t.html
+[ log ] s.com/index/sys/t.html [运行时间：0.054687s][吞吐率：18.29req/s] [内存消耗：1,538.51kb] [文件加载：42]
+[ info ] [ LANG ] F:\ssisuo\ssisuo\webroot\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sys',
+    2 => 't',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 's.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Sys->t[ F:\ssisuo\ssisuo\webroot\application\index\controller\Sys.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000977s ] mysql:dbname=ssisuo;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] select * from ssi_user where id=1 [ RunTime:0.000977s ]
+[ error ] [10501]SQLSTATE[21S01]: Insert value list does not match column list: 1136 Column count doesn't match value count at row 1[F:\ssisuo\ssisuo\webroot\thinkphp\library\think\db\Connection.php:399]
+
+---------------------------------------------------------------
+[ 2017-04-30T15:27:12+08:00 ] 127.0.0.1 127.0.0.1 GET /index/sys/t.html
+[ log ] s.com/index/sys/t.html [运行时间：0.051758s][吞吐率：19.32req/s] [内存消耗：1,538.59kb] [文件加载：42]
+[ info ] [ LANG ] F:\ssisuo\ssisuo\webroot\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sys',
+    2 => 't',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 's.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Sys->t[ F:\ssisuo\ssisuo\webroot\application\index\controller\Sys.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000976s ] mysql:dbname=ssisuo;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] select * from ssi_user where id=1 [ RunTime:0.000977s ]
+[ error ] [10501]SQLSTATE[21S01]: Insert value list does not match column list: 1136 Column count doesn't match value count at row 1[F:\ssisuo\ssisuo\webroot\thinkphp\library\think\db\Connection.php:399]
+
+---------------------------------------------------------------
+[ 2017-04-30T15:27:13+08:00 ] 127.0.0.1 127.0.0.1 GET /index/sys/t.html
+[ log ] s.com/index/sys/t.html [运行时间：0.053711s][吞吐率：18.62req/s] [内存消耗：1,538.59kb] [文件加载：42]
+[ info ] [ LANG ] F:\ssisuo\ssisuo\webroot\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sys',
+    2 => 't',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 's.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Sys->t[ F:\ssisuo\ssisuo\webroot\application\index\controller\Sys.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000977s ] mysql:dbname=ssisuo;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] select * from ssi_user where id=1 [ RunTime:0.000977s ]
+[ error ] [10501]SQLSTATE[21S01]: Insert value list does not match column list: 1136 Column count doesn't match value count at row 1[F:\ssisuo\ssisuo\webroot\thinkphp\library\think\db\Connection.php:399]
+
+---------------------------------------------------------------
+[ 2017-04-30T15:27:13+08:00 ] 127.0.0.1 127.0.0.1 GET /index/sys/t.html
+[ log ] s.com/index/sys/t.html [运行时间：0.058593s][吞吐率：17.07req/s] [内存消耗：1,538.59kb] [文件加载：42]
+[ info ] [ LANG ] F:\ssisuo\ssisuo\webroot\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sys',
+    2 => 't',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 's.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Sys->t[ F:\ssisuo\ssisuo\webroot\application\index\controller\Sys.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001953s ] mysql:dbname=ssisuo;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] select * from ssi_user where id=1 [ RunTime:0.000977s ]
+[ error ] [10501]SQLSTATE[21S01]: Insert value list does not match column list: 1136 Column count doesn't match value count at row 1[F:\ssisuo\ssisuo\webroot\thinkphp\library\think\db\Connection.php:399]
+
+---------------------------------------------------------------
+[ 2017-04-30T15:27:16+08:00 ] 127.0.0.1 127.0.0.1 GET /index/sys/t.html
+[ log ] s.com/index/sys/t.html [运行时间：0.060546s][吞吐率：16.52req/s] [内存消耗：1,538.59kb] [文件加载：42]
+[ info ] [ LANG ] F:\ssisuo\ssisuo\webroot\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sys',
+    2 => 't',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 's.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Sys->t[ F:\ssisuo\ssisuo\webroot\application\index\controller\Sys.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000977s ] mysql:dbname=ssisuo;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] select * from ssi_user where id=1 [ RunTime:0.000977s ]
+[ error ] [10501]SQLSTATE[21S01]: Insert value list does not match column list: 1136 Column count doesn't match value count at row 1[F:\ssisuo\ssisuo\webroot\thinkphp\library\think\db\Connection.php:399]
+
+---------------------------------------------------------------
+[ 2017-04-30T15:27:17+08:00 ] 127.0.0.1 127.0.0.1 GET /index/sys/t.html
+[ log ] s.com/index/sys/t.html [运行时间：0.050781s][吞吐率：19.69req/s] [内存消耗：1,538.59kb] [文件加载：42]
+[ info ] [ LANG ] F:\ssisuo\ssisuo\webroot\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sys',
+    2 => 't',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 's.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Sys->t[ F:\ssisuo\ssisuo\webroot\application\index\controller\Sys.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000977s ] mysql:dbname=ssisuo;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] select * from ssi_user where id=1 [ RunTime:0.000977s ]
+[ error ] [10501]SQLSTATE[21S01]: Insert value list does not match column list: 1136 Column count doesn't match value count at row 1[F:\ssisuo\ssisuo\webroot\thinkphp\library\think\db\Connection.php:399]
+
+---------------------------------------------------------------
+[ 2017-04-30T15:27:17+08:00 ] 127.0.0.1 127.0.0.1 GET /index/sys/t.html
+[ log ] s.com/index/sys/t.html [运行时间：0.053711s][吞吐率：18.62req/s] [内存消耗：1,538.57kb] [文件加载：42]
+[ info ] [ LANG ] F:\ssisuo\ssisuo\webroot\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sys',
+    2 => 't',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 's.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Sys->t[ F:\ssisuo\ssisuo\webroot\application\index\controller\Sys.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001953s ] mysql:dbname=ssisuo;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] select * from ssi_user where id=1 [ RunTime:0.000977s ]
+[ error ] [10501]SQLSTATE[21S01]: Insert value list does not match column list: 1136 Column count doesn't match value count at row 1[F:\ssisuo\ssisuo\webroot\thinkphp\library\think\db\Connection.php:399]
+
+---------------------------------------------------------------
+[ 2017-04-30T15:27:18+08:00 ] 127.0.0.1 127.0.0.1 GET /index/sys/t.html
+[ log ] s.com/index/sys/t.html [运行时间：0.060547s][吞吐率：16.52req/s] [内存消耗：1,538.59kb] [文件加载：42]
+[ info ] [ LANG ] F:\ssisuo\ssisuo\webroot\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sys',
+    2 => 't',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 's.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Sys->t[ F:\ssisuo\ssisuo\webroot\application\index\controller\Sys.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000976s ] mysql:dbname=ssisuo;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] select * from ssi_user where id=1 [ RunTime:0.007813s ]
+[ error ] [10501]SQLSTATE[21S01]: Insert value list does not match column list: 1136 Column count doesn't match value count at row 1[F:\ssisuo\ssisuo\webroot\thinkphp\library\think\db\Connection.php:399]
+
+---------------------------------------------------------------
+[ 2017-04-30T15:27:40+08:00 ] 127.0.0.1 127.0.0.1 GET /index/sys/t.html
+[ log ] s.com/index/sys/t.html [运行时间：0.059571s][吞吐率：16.79req/s] [内存消耗：1,538.69kb] [文件加载：42]
+[ info ] [ LANG ] F:\ssisuo\ssisuo\webroot\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sys',
+    2 => 't',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 's.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Sys->t[ F:\ssisuo\ssisuo\webroot\application\index\controller\Sys.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010742s ] mysql:dbname=ssisuo;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] select * from ssi_user where id=1 [ RunTime:0.000977s ]
+[ error ] [10501]SQLSTATE[21S01]: Insert value list does not match column list: 1136 Column count doesn't match value count at row 1[F:\ssisuo\ssisuo\webroot\thinkphp\library\think\db\Connection.php:399]
+
+---------------------------------------------------------------
+[ 2017-04-30T15:27:52+08:00 ] 127.0.0.1 127.0.0.1 GET /index/sys/t.html
+[ log ] s.com/index/sys/t.html [运行时间：0.057617s][吞吐率：17.36req/s] [内存消耗：1,538.66kb] [文件加载：42]
+[ info ] [ LANG ] F:\ssisuo\ssisuo\webroot\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sys',
+    2 => 't',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 's.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Sys->t[ F:\ssisuo\ssisuo\webroot\application\index\controller\Sys.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010743s ] mysql:dbname=ssisuo;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] select * from ssi_user where id=1 [ RunTime:0.000977s ]
+[ error ] [10501]SQLSTATE[21S01]: Insert value list does not match column list: 1136 Column count doesn't match value count at row 1[F:\ssisuo\ssisuo\webroot\thinkphp\library\think\db\Connection.php:399]
+
+---------------------------------------------------------------
+[ 2017-04-30T15:28:14+08:00 ] 127.0.0.1 127.0.0.1 GET /index/sys/t.html
+[ log ] s.com/index/sys/t.html [运行时间：0.059570s][吞吐率：16.79req/s] [内存消耗：1,538.55kb] [文件加载：42]
+[ info ] [ LANG ] F:\ssisuo\ssisuo\webroot\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sys',
+    2 => 't',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 's.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Sys->t[ F:\ssisuo\ssisuo\webroot\application\index\controller\Sys.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011718s ] mysql:dbname=ssisuo;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] select * from ssi_user where id=1 [ RunTime:0.000976s ]
+[ error ] [10501]SQLSTATE[21S01]: Insert value list does not match column list: 1136 Column count doesn't match value count at row 1[F:\ssisuo\ssisuo\webroot\thinkphp\library\think\db\Connection.php:399]
+
+---------------------------------------------------------------
+[ 2017-04-30T15:28:20+08:00 ] 127.0.0.1 127.0.0.1 GET /index/sys/t.html
+[ log ] s.com/index/sys/t.html [运行时间：0.066406s][吞吐率：15.06req/s] [内存消耗：1,538.45kb] [文件加载：42]
+[ info ] [ LANG ] F:\ssisuo\ssisuo\webroot\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sys',
+    2 => 't',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 's.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Sys->t[ F:\ssisuo\ssisuo\webroot\application\index\controller\Sys.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009765s ] mysql:dbname=ssisuo;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] select * from ssi_user where id=1 [ RunTime:0.000977s ]
+[ error ] [10501]SQLSTATE[21S01]: Insert value list does not match column list: 1136 Column count doesn't match value count at row 1[F:\ssisuo\ssisuo\webroot\thinkphp\library\think\db\Connection.php:399]
+
+---------------------------------------------------------------
+[ 2017-04-30T15:28:55+08:00 ] 127.0.0.1 127.0.0.1 GET /index/sys/t.html
+[ log ] s.com/index/sys/t.html [运行时间：0.065430s][吞吐率：15.28req/s] [内存消耗：1,538.43kb] [文件加载：42]
+[ info ] [ LANG ] F:\ssisuo\ssisuo\webroot\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sys',
+    2 => 't',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 's.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Sys->t[ F:\ssisuo\ssisuo\webroot\application\index\controller\Sys.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010742s ] mysql:dbname=ssisuo;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] select * from ssi_user where id=1 [ RunTime:0.000976s ]
+[ error ] [10501]SQLSTATE[21S01]: Insert value list does not match column list: 1136 Column count doesn't match value count at row 1[F:\ssisuo\ssisuo\webroot\thinkphp\library\think\db\Connection.php:399]
+
+---------------------------------------------------------------
+[ 2017-04-30T15:29:14+08:00 ] 127.0.0.1 127.0.0.1 GET /index/sys/t.html
+[ log ] s.com/index/sys/t.html [运行时间：0.054687s][吞吐率：18.29req/s] [内存消耗：1,538.45kb] [文件加载：42]
+[ info ] [ LANG ] F:\ssisuo\ssisuo\webroot\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sys',
+    2 => 't',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 's.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Sys->t[ F:\ssisuo\ssisuo\webroot\application\index\controller\Sys.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000977s ] mysql:dbname=ssisuo;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] select * from ssi_user where id=1 [ RunTime:0.000977s ]
+[ error ] [10501]SQLSTATE[21S01]: Insert value list does not match column list: 1136 Column count doesn't match value count at row 1[F:\ssisuo\ssisuo\webroot\thinkphp\library\think\db\Connection.php:399]
+
+---------------------------------------------------------------
+[ 2017-04-30T15:29:55+08:00 ] 127.0.0.1 127.0.0.1 GET /index/sys/t.html
+[ log ] s.com/index/sys/t.html [运行时间：0.061523s][吞吐率：16.25req/s] [内存消耗：1,542.48kb] [文件加载：41]
+[ info ] [ LANG ] F:\ssisuo\ssisuo\webroot\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sys',
+    2 => 't',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 's.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Sys->t[ F:\ssisuo\ssisuo\webroot\application\index\controller\Sys.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010743s ] mysql:dbname=ssisuo;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] select * from ssi_user where id=1 [ RunTime:0.000977s ]
+[ error ] [8]未定义变量: object[F:\ssisuo\ssisuo\webroot\extend\freefile\data\G.php:173]
+
+---------------------------------------------------------------
+[ 2017-04-30T15:30:02+08:00 ] 127.0.0.1 127.0.0.1 GET /index/sys/t.html
+[ log ] s.com/index/sys/t.html [运行时间：0.055664s][吞吐率：17.96req/s] [内存消耗：1,538.65kb] [文件加载：42]
+[ info ] [ LANG ] F:\ssisuo\ssisuo\webroot\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sys',
+    2 => 't',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 's.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Sys->t[ F:\ssisuo\ssisuo\webroot\application\index\controller\Sys.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000977s ] mysql:dbname=ssisuo;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] select * from ssi_user where id=1 [ RunTime:0.000977s ]
+[ error ] [10501]SQLSTATE[21S01]: Insert value list does not match column list: 1136 Column count doesn't match value count at row 1[F:\ssisuo\ssisuo\webroot\thinkphp\library\think\db\Connection.php:399]
+
+---------------------------------------------------------------
+[ 2017-04-30T15:30:37+08:00 ] 127.0.0.1 127.0.0.1 GET /index/sys/t.html
+[ log ] s.com/index/sys/t.html [运行时间：0.067383s][吞吐率：14.84req/s] [内存消耗：1,538.84kb] [文件加载：42]
+[ info ] [ LANG ] F:\ssisuo\ssisuo\webroot\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sys',
+    2 => 't',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 's.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Sys->t[ F:\ssisuo\ssisuo\webroot\application\index\controller\Sys.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011719s ] mysql:dbname=ssisuo;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] select * from ssi_user where id=1 [ RunTime:0.000977s ]
+[ error ] [10501]SQLSTATE[21S01]: Insert value list does not match column list: 1136 Column count doesn't match value count at row 1[F:\ssisuo\ssisuo\webroot\thinkphp\library\think\db\Connection.php:399]
+
+---------------------------------------------------------------
+[ 2017-04-30T15:31:04+08:00 ] 127.0.0.1 127.0.0.1 GET /index/sys/t.html
+[ log ] s.com/index/sys/t.html [运行时间：0.063477s][吞吐率：15.75req/s] [内存消耗：1,538.81kb] [文件加载：42]
+[ info ] [ LANG ] F:\ssisuo\ssisuo\webroot\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sys',
+    2 => 't',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 's.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Sys->t[ F:\ssisuo\ssisuo\webroot\application\index\controller\Sys.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011719s ] mysql:dbname=ssisuo;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] select * from ssi_user where id=1 [ RunTime:0.000977s ]
+[ error ] [10501]SQLSTATE[21S01]: Insert value list does not match column list: 1136 Column count doesn't match value count at row 1[F:\ssisuo\ssisuo\webroot\thinkphp\library\think\db\Connection.php:399]
+
+---------------------------------------------------------------
+[ 2017-04-30T15:33:06+08:00 ] 127.0.0.1 127.0.0.1 GET /index/sys/t.html
+[ log ] s.com/index/sys/t.html [运行时间：0.097656s][吞吐率：10.24req/s] [内存消耗：1,500.95kb] [文件加载：38]
+[ info ] [ LANG ] F:\ssisuo\ssisuo\webroot\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sys',
+    2 => 't',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 's.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Sys->t[ F:\ssisuo\ssisuo\webroot\application\index\controller\Sys.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\ssisuo\ssisuo\webroot\public/../application/index/view/header.html [ array (
+  0 => 'user',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010742s ] mysql:dbname=ssisuo;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] select * from ssi_user where id=1 [ RunTime:0.000976s ]
+[ sql ] [ SQL ] insert into ssi_user values('','f在定了e','e10adc3949ba59abbe56e057f20f883e','2017-04-28 04:26:32',2,'系统管理',1,1,'[1]') [ RunTime:0.037109s ]
+[ sql ] [ SQL ] select * from ssi_user [ RunTime:0.000977s ]
+
+---------------------------------------------------------------
+[ 2017-04-30T15:34:34+08:00 ] 127.0.0.1 127.0.0.1 GET /index/sys/t.html
+[ log ] s.com/index/sys/t.html [运行时间：0.109375s][吞吐率：9.14req/s] [内存消耗：1,501.15kb] [文件加载：38]
+[ info ] [ LANG ] F:\ssisuo\ssisuo\webroot\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sys',
+    2 => 't',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 's.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Sys->t[ F:\ssisuo\ssisuo\webroot\application\index\controller\Sys.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\ssisuo\ssisuo\webroot\public/../application/index/view/header.html [ array (
+  0 => 'user',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011719s ] mysql:dbname=ssisuo;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] select * from ssi_user where id=1 [ RunTime:0.000977s ]
+[ sql ] [ SQL ] insert into ssi_user values('','f在定了e','e10adc3949ba59abbe56e057f20f883e','2017-04-28 04:26:32',2,'系统管理',1,1,'[1]') [ RunTime:0.051757s ]
+[ sql ] [ SQL ] select * from ssi_user [ RunTime:0.000977s ]
+
+---------------------------------------------------------------
+[ 2017-04-30T15:44:14+08:00 ] 127.0.0.1 127.0.0.1 GET /index/sys/t.html
+[ log ] s.com/index/sys/t.html [运行时间：0.053711s][吞吐率：18.62req/s] [内存消耗：1,497.00kb] [文件加载：38]
+[ info ] [ LANG ] F:\ssisuo\ssisuo\webroot\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sys',
+    2 => 't',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 's.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Sys->t[ F:\ssisuo\ssisuo\webroot\application\index\controller\Sys.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\ssisuo\ssisuo\webroot\public/../application/index/view/header.html [ array (
+  0 => 'user',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011719s ] mysql:dbname=ssisuo;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] select * from ssi_user where id=1 [ RunTime:0.000977s ]
+[ sql ] [ SQL ] select * from ssi_user [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-04-30T15:44:15+08:00 ] 127.0.0.1 127.0.0.1 GET /index/sys/t.html
+[ log ] s.com/index/sys/t.html [运行时间：0.080078s][吞吐率：12.49req/s] [内存消耗：1,497.00kb] [文件加载：38]
+[ info ] [ LANG ] F:\ssisuo\ssisuo\webroot\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sys',
+    2 => 't',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 's.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Sys->t[ F:\ssisuo\ssisuo\webroot\application\index\controller\Sys.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\ssisuo\ssisuo\webroot\public/../application/index/view/header.html [ array (
+  0 => 'user',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003906s ] mysql:dbname=ssisuo;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] select * from ssi_user where id=1 [ RunTime:0.001953s ]
+[ sql ] [ SQL ] select * from ssi_user [ RunTime:0.001953s ]
+
+---------------------------------------------------------------
+[ 2017-04-30T15:45:20+08:00 ] 127.0.0.1 127.0.0.1 GET /index/sys/t.html
+[ log ] s.com/index/sys/t.html [运行时间：0.077148s][吞吐率：12.96req/s] [内存消耗：1,531.40kb] [文件加载：40]
+[ info ] [ LANG ] F:\ssisuo\ssisuo\webroot\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sys',
+    2 => 't',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 's.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Sys->t[ F:\ssisuo\ssisuo\webroot\application\index\controller\Sys.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000977s ] mysql:dbname=ssisuo;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] select * from ssi_user where id=1 [ RunTime:0.001953s ]
+[ sql ] [ SQL ] select * from ssi_user [ RunTime:0.000976s ]
+[ error ] [0]模板文件不存在:F:\ssisuo\ssisuo\webroot\public/../application/index\view\sys\header.html[F:\ssisuo\ssisuo\webroot\thinkphp\library\think\view\driver\Think.php:80]
+
+---------------------------------------------------------------
+[ 2017-04-30T15:45:58+08:00 ] 127.0.0.1 127.0.0.1 GET /index/sys/t.html
+[ log ] s.com/index/sys/t.html [运行时间：0.055664s][吞吐率：17.96req/s] [内存消耗：1,640.63kb] [文件加载：40]
+[ info ] [ LANG ] F:\ssisuo\ssisuo\webroot\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sys',
+    2 => 't',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 's.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Sys->t[ F:\ssisuo\ssisuo\webroot\application\index\controller\Sys.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\ssisuo\ssisuo\webroot\public/../application/index\view\sys\header.html [ array (
+  0 => 'user',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000977s ] mysql:dbname=ssisuo;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] select * from ssi_user where id=1 [ RunTime:0.000977s ]
+[ sql ] [ SQL ] select * from ssi_user [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-04-30T15:46:35+08:00 ] 127.0.0.1 127.0.0.1 GET /index/sys/
+[ log ] s.com/index/sys/ [运行时间：0.033203s][吞吐率：30.12req/s] [内存消耗：1,278.90kb] [文件加载：33]
+[ info ] [ LANG ] F:\ssisuo\ssisuo\webroot\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sys',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 's.com',
+  'connection' => 'keep-alive',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Sys->index[ F:\ssisuo\ssisuo\webroot\application\index\controller\Sys.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-30T15:46:36+08:00 ] 127.0.0.1 127.0.0.1 GET /index/sys/
+[ log ] s.com/index/sys/ [运行时间：0.042969s][吞吐率：23.27req/s] [内存消耗：1,279.05kb] [文件加载：33]
+[ info ] [ LANG ] F:\ssisuo\ssisuo\webroot\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sys',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 's.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Sys->index[ F:\ssisuo\ssisuo\webroot\application\index\controller\Sys.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
