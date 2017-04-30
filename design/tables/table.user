@@ -1,0 +1,10 @@
+表名user
+编号id,int,PRIMARY,A_I
+用户名name,varchar(32),utf8,index
+MD5密码mdpsd,char(33),utf8,index
+最后登录时间last_login_time,datetime
+权限等级limit_level,smallint
+群组group_name,varchar(32),utf8
+员工编号member_id,int
+顾客编号customer_id,int
+头像head_icon，varchar(255)

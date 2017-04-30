@@ -1,0 +1,108 @@
+[ 2017-04-30T11:25:59+08:00 ] 127.0.0.1 127.0.0.1 GET /index/sys/t.html
+[ log ] s.com/index/sys/t.html [运行时间：0.337890s][吞吐率：2.96req/s] [内存消耗：1,628.24kb] [文件加载：40]
+[ info ] [ LANG ] F:\ssisuo\ssisuo\webroot\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sys',
+    2 => 't',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 's.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Sys->t[ F:\ssisuo\ssisuo\webroot\application\index\controller\Sys.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\ssisuo\ssisuo\webroot\public/../application/index/view/header.html [ array (
+  0 => 'user',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.018555s ] mysql:dbname=ssisuo;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] select * from ssi_user where id=1 [ RunTime:0.000976s ]
+[ sql ] [ SQL ] update ssi_user set `name`='ff22f' where id =1 [ RunTime:0.053711s ]
+[ sql ] [ SQL ] select * from ssi_user [ RunTime:0.000976s ]
+
+---------------------------------------------------------------
+[ 2017-04-30T11:26:00+08:00 ] 127.0.0.1 127.0.0.1 GET /index/sys/t.html
+[ log ] s.com/index/sys/t.html [运行时间：0.082032s][吞吐率：12.19req/s] [内存消耗：1,485.95kb] [文件加载：38]
+[ info ] [ LANG ] F:\ssisuo\ssisuo\webroot\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sys',
+    2 => 't',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 's.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Sys->t[ F:\ssisuo\ssisuo\webroot\application\index\controller\Sys.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\ssisuo\ssisuo\webroot\public/../application/index/view/header.html [ array (
+  0 => 'user',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009765s ] mysql:dbname=ssisuo;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] select * from ssi_user where id=1 [ RunTime:0.000977s ]
+[ sql ] [ SQL ] update ssi_user set `name`='ff22f' where id =1 [ RunTime:0.036132s ]
+[ sql ] [ SQL ] select * from ssi_user [ RunTime:0.000977s ]
+
+---------------------------------------------------------------
+[ 2017-04-30T11:26:01+08:00 ] 127.0.0.1 127.0.0.1 GET /index/sys/t.html
+[ log ] s.com/index/sys/t.html [运行时间：0.155273s][吞吐率：6.44req/s] [内存消耗：1,485.95kb] [文件加载：38]
+[ info ] [ LANG ] F:\ssisuo\ssisuo\webroot\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'sys',
+    2 => 't',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 's.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Sys->t[ F:\ssisuo\ssisuo\webroot\application\index\controller\Sys.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\ssisuo\ssisuo\webroot\public/../application/index/view/header.html [ array (
+  0 => 'user',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001953s ] mysql:dbname=ssisuo;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] select * from ssi_user where id=1 [ RunTime:0.041992s ]
+[ sql ] [ SQL ] update ssi_user set `name`='ff22f' where id =1 [ RunTime:0.054688s ]
+[ sql ] [ SQL ] select * from ssi_user [ RunTime:0.000976s ]
+
+---------------------------------------------------------------

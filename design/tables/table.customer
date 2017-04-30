@@ -1,0 +1,9 @@
+表名customer
+编号id,int,PRIMARY,A_I
+称呼name,varchar(32)
+性别sexy,char(8)
+生日birstday,char(5)
+备注remark，varchar(255)
+最后一次与我们联系的日期last_talk_day,date
+qq,varchar(15)
+微信号wechat,varchar(32)
