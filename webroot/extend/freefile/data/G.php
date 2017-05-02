@@ -33,21 +33,21 @@ abstract class G
     {
         // 参数判断
         if (! empty($where_)) {
-            if (strlen($where_) < 3) {
+            if (strlen($where_) > 3) {
                 $where_ = ' where ' . $where_; // 查询条件字符判断，长度小于3则报错
             } else {
                 abort(404, 'G->getSomes参数值where错：' . $where_ . '<br />');
             }
         }
         if (! empty($limit_)) {
-            if (strlen($limit_) < 3) {
+            if (strlen($limit_) > 3) {
                 $limit_ = ' limit ' . $limit_; // 查询条件字符判断，长度小于3则报错
             } else {
                 abort(404, 'G->getSomes参数值limit错：' . $limit_ . '<br />');
             }
         }
         if (! empty($order_)) {
-            if (strlen($order_) < 3) {
+            if (strlen($order_) > 3) {
                 $order_ = ' where ' . $order_; // 查询条件字符判断，长度小于3则报错
             } else {
                 abort(404, 'G->getSomes参数值order错：' . $order_ . '<br />');

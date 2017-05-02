@@ -1,6 +1,6 @@
 表名online
 编号id,int,PRIMARY,A_I
-临时身份key,char(33),index
+临时身份card,varchar(65),index
 对应用户编号user_id,int
 来源ip1,smallint
 来源ip2,smallint
@@ -10,3 +10,4 @@
 锁定时间lock_time,timestamp
 连续错误次数error_count,int
 身份持续的截止时间end_time，datetime
+上次连接时间last_link_time,datetime
