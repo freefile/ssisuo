@@ -1,7 +1,8 @@
 <?php
 namespace freefile\data;
-
+use think\Debug;
 use think\Session;
+use think\Validate;
 
 /**
  * 在线数据
@@ -27,14 +28,16 @@ class Online extends G
     var $ip4;
     // 来源域名domain,varchar(32)
     var $domain;
-    // 锁定时间lock_time,timestamp
+    // 锁定时间lock_time,int
     var $lock_time;
     // 连续错误次数error_count,int
     var $error_count;
-    // 身份持续的截止时间end_time，datetime
+    // 身份持续的截止时间end_time，timestamp
     var $end_time;
-    // 上次连接时间last_link_time,datetime
+    // 上次连接时间last_link_time,timestamp
     var $last_link_time;
+    // 消息msg,varchar(255)
+    var $msg;
 
     function __construct()
     {
@@ -48,6 +51,8 @@ class Online extends G
         $this->error_count = 0;
         $this->end_time = date('Y-m-d H:i:s', time() + 3600);
         $this->last_link_time = date('Y-m-d H:i:s', time());
+        $this->msg = '';
+        $this->card = $this->createCard();
         $this->getSaveInfo();
     }
 
@@ -62,12 +67,14 @@ class Online extends G
         $obj->ip3 = intval($array_['ip3']);
         $obj->ip4 = intval($array_['ip4']);
         $obj->domain = $array_['domain'];
-        $obj->lock_time = $array_['lock_time'];
+        $obj->lock_time = intval($array_['lock_time']);
         $obj->error_count = intval($array_['error_count']);
         $obj->end_time = $array_['end_time'];
         $obj->last_link_time = $array_['last_link_time'];
+        $obj->msg = $array_['msg'];
         return $obj;
     }
+    public function rule($data_,&$result_msg_){}
 
     /**
      * 创建一个card——算法
@@ -99,43 +106,35 @@ class Online extends G
      */
     private function getSaveInfo()
     {
-        $card = $this->createCard();
-        $result = parent::getSomes("card ='{$card}'", '', '');
+        $result = $this->getSomes("card ='{$this->card}'", '', '');
         if (count($result) < 1) {
             // 没有找到数据库中的记录
-            $this->card = $card;
             parent::add($this);
         } elseif (count($result) == 1) {
             // 找到了记录
             $serverObj = $result[0];
-            $this->id = $serverObj->id;
-            // 如果服务器记录的IP与当前获取的IP不同
+            
+            // 如果服务器记录的IP与当前获取的IP不同 TODO
             if ($this->ip1 != $serverObj->ip1) {
-                $this->upOne('ip1', $this->ip1);
             }
             if ($this->ip2 != $serverObj->ip2) {
-                $this->upOne('ip2', $this->ip2);
             }
             if ($this->ip3 != $serverObj->ip3) {
-                $this->upOne('ip3', $this->ip3);
             }
             if ($this->ip4 != $serverObj->ip4) {
-                $this->upOne('ip4', $this->ip4);
             }
             
             // 如果服务器记录的域名与当前获取的域名不同
             if ($this->domain != $serverObj->domain) {
                 // TODO
-                $this->upOne('domain', $this->domain);
+                $this->domain = $serverObj->domain;
             }
-            $this->user_id = $serverObj->user_id;
-            $this->lock_time = $serverObj->lock_time;
-            $this->error_count = $serverObj->error_count;
-            $this->end_time = $serverObj->end_time;
-            $this->last_link_time = $serverObj->last_link_time;
+            $this->arrayToObj( json_decode( json_encode($serverObj),true), 0);
+            $this->last_link_time = date('Y-m-d H:i:s', time());
+            $this->upSelf();
         } else {
             // 数据库中有相同KEY存在，必须要记录处理
-            //TODO
+            // TODO
         }
     }
 

@@ -1,10 +1,12 @@
 <?php
 namespace freefile\data;
-
+use think\Validate;
+use think\Debug;
 /**
  * 登陆账户数据表
- * @author Administrator
  *
+ * @author Administrator
+ *        
  */
 class User extends G
 {
@@ -27,11 +29,28 @@ class User extends G
     // 头像head_icon，varchar(255)
     var $head_icon;
 
-    function __construct()
+    function __construct($id = null)
     {
         $this->class_name = 'User';
         $this->table_name = 'ssi_user';
         $this->id_name = 'id';
+        $this->id = 0;
+        $this->name = '游客';
+        $this->limit_level = 0;
+        $this->group_name = '';
+        $this->member_id = 0;
+        $this->customer_id = 0;
+        $this->head_icon = '[0]';
+        if ($id != null) {
+            if (intval($id) > 0) {
+                $user = $this->getOne($id);
+                if ($user == null) {
+                    abort(404, 'User->construct参数值$id错：' . $id . '<br />');
+                } else {
+                    $this->arrayToObj(json_decode(json_encode($user), true), 0);
+                }
+            }
+        }
     }
 
     protected function arrayToObj($array_, $is_new_obj_)
@@ -39,7 +58,7 @@ class User extends G
         $obj = $is_new_obj_ != 0 ? clone $this : $this;
         $obj->id = intval($array_['id']);
         $obj->name = $array_['name'];
-        $obj->mdpsd = $array_['mdpsd'];
+        //$obj->mdpsd = $array_['mdpsd'];
         $obj->last_login_time = $array_['last_login_time'];
         $obj->limit_level = intval($array_['limit_level']);
         $obj->group_name = $array_['group_name'];
@@ -48,12 +67,40 @@ class User extends G
         $obj->head_icon = $array_['head_icon'];
         return $obj;
     }
+    public function rule($data_,&$result_msg_){
+        $rule = [
+            'name'  => 'require|min:4|max:32',
+            'psd' =>'require|min:6|max:32',
+            'limit_level'   => 'number|between:0,15',
+            'group_name' => 'require|max:32',
+        ];
+        
+        $msg = [
+            'name.require' => '名称必须',
+            'name.max'     => '名称最多不能超过32个字符',
+            'name.min' => '名称最短4个字符',
+            'psd.require' => '密码必须',
+            'psd.min' => '密码最短6个字符',
+            'psd.max'     => '密码最多不能超过32个字符',
+            'limit_level.number'   => '权限必须是数字',
+            'limit_level.between'  => '权限只能在0-15之间',
+            'group_name.require'        => '群组必须',
+            'group_name.max'     => '群组最多不能超过32个字符',
+        ];
+        $validate = new Validate($rule, $msg);
+        $result = $validate->check($data_);
+        $result_msg_ =$validate->getError();
+        return $result;
+    }
+
     /**
      * TODO
      * 获取头像的URL地址
+     *
      * @return $result="http://xxx……"
      */
-    public function getIconUrl(){
+    public function getIconUrl()
+    {
         
     }
 }

@@ -1,6 +1,7 @@
 <?php
 namespace freefile\data;
 use think\Db;
+use think\Debug;
 
 abstract class G
 {
@@ -19,7 +20,13 @@ abstract class G
      * @return obj  
      */
     abstract protected function arrayToObj($array_,$is_new_obj_);
-
+    
+    /**
+     * 设置数据检查
+     * @param $obj_ 检查对象
+     * @param &result_msg_ 传入参数，将检查结果字符串方式返给该参数
+     */
+    abstract public function rule($data_,&$result_msg_);
 
 
     /**
@@ -61,6 +68,7 @@ abstract class G
             $obj = $this->arrayToObj($data,1); // 将查询的数据转换为对象，并加入到输出数组中
             array_push($result, $obj);
         }
+        Debug::dump($sql);
         return $result;
     }
 
@@ -75,12 +83,13 @@ abstract class G
         if (intval($id_) <= 0) {
             abort(404, 'G->getOne参数值id错：' . $id_);
         }
-        $result = array();
+        $result = null;
         $sql = "select * from {$this->table_name} where {$this->id_name}=$id_";
         $sql_result = Db::query($sql);
         if (count($sql_result) == 1) { // 查询有结果，才可以进行
             $result = $this->arrayToObj($sql_result[0],1); // 将查询的数据转换为输出对象
         }
+        Debug::dump($sql);
         return $result;
     }
 
@@ -93,10 +102,22 @@ abstract class G
      */
     public function upObect($dec_object_)
     {
-        $array = get_class_vars(get_class($dec_object_)); // 获取子类的数据
         $tmp_array = array();
         foreach ($dec_object_ as $key => $val) { // 列举所有数据
             if ($this->$key != $dec_object_->$key && $key != $this->id_name) {
+                if (is_int($val) || is_float($val)) { // 如果是数字或浮点数，则不加''
+                    array_push($tmp_array, "{$key} = {$val}");
+                } else {
+                    array_push($tmp_array, "{$key} = '{$val}'");
+                }
+            }
+        }
+        $this->upArray($tmp_array);
+    }
+    public function upSelf(){
+        $tmp_array = array();
+        foreach ($this as $key => $val) { // 列举所有数据
+            if ($key != $this->id_name && $key != 'id_name' && $key != 'table_name' && $key !='class_name') {
                 if (is_int($val) || is_float($val)) { // 如果是数字或浮点数，则不加''
                     array_push($tmp_array, "{$key} = {$val}");
                 } else {
@@ -122,6 +143,7 @@ abstract class G
         }
         $id_name = $this->id_name;
         Db::query("update {$this->table_name} set {$set} where {$id_name} ={$this->$id_name}");
+       // echo "update {$this->table_name} set {$set} where {$id_name} ={$this->$id_name}";
     }
 
     /**
@@ -141,12 +163,14 @@ abstract class G
             if (strlen($val) < 3) {
                 abort(404, "G->upArray参数值{$array_}的下标[{$key}]错：{$val}");
             } else {
-                $set .= 'and ' . $val;
+                $set .= ' , ' . $val;
             }
         }
-        $set = substr($set, 4);
+        $set = substr($set, 3);
         $id_name = $this->id_name;
-        Db::query("update {$this->table_name} set {$set} where {$id_name} ={$this->$id_name}");
+        $sql = "update {$this->table_name} set {$set} where {$id_name} ={$this->$id_name}";
+        Debug::dump($sql);
+        Db::query($sql);
     }
 
     /**
@@ -159,7 +183,9 @@ abstract class G
         if (intval($id_) <= 0) {
             abort(404, 'G->del参数值id错：' . $id_);
         }
-        Db::query("delete from {$this->table_name} where {$this->id_name} = {$id_}");
+        $sql ="delete from {$this->table_name} where {$this->id_name} = {$id_}";
+        Debug::dump($sql);
+        return Db::query($sql);
     }
 
     /**
@@ -199,7 +225,9 @@ abstract class G
             }
         }
         $values = substr($values, 1);
-        Db::query("insert into {$this->table_name} values({$values})");
+        $sql = "insert into {$this->table_name} values({$values})";
+        Debug::dump($sql);
+        Db::query($sql);
     }
 }
 ?>

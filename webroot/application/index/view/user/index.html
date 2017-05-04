@@ -1,0 +1,8 @@
+{include file="header" /}
+{if ($online->user_id == 0)}
+{include file="/model/form_login" /}
+{else /}
+<a href="/index/user/addUser/">添加用户</a>
+<a href="/index/user/delUser/">删除用户</a>
+{/if}
+ {include file="footer" /}

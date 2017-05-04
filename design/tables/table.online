@@ -7,7 +7,8 @@
 来源ip3,smallint
 来源ip4,smallint
 来源域名domain,varchar(32)
-锁定时间lock_time,timestamp
+锁定时间lock_time,int
 连续错误次数error_count,int
-身份持续的截止时间end_time，datetime
-上次连接时间last_link_time,datetime
+身份持续的截止时间end_time，timestamp
+上次连接时间last_link_time , timestamp
+消息msg,varchar(255)

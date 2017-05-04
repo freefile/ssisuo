@@ -1,0 +1,8 @@
+<form action="/index/user/delUser" method="post">
+<ul>
+{foreach $users as $obj}
+<li><input type="checkbox" name="del_user_ids[]" value="{$obj:id}" />{$obj:name}</li>
+{/foreach}
+</ul>
+<input type="submit" value="删除" />
+</form>

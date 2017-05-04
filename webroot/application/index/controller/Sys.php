@@ -1,17 +1,22 @@
 <?php
 namespace app\index\controller;
+
+use think\Request;
+
 class Sys extends CL
 {
 
     public function index()
     {
-        return "后台主页";
+        $this->data['users'] = $this->user->getSomes('', '', '');
+        return $this->view->fetch(Request::instance()->action(), $this->data);
     }
-    public function t(){
-        $this->user = $this->user->getOne(1);
-        $data['user'] = $this->user->getSomes('', '', '');
-        $data['user_name'] = $this->online->user_id;
-        return $this->view->fetch('header',$data);
-       // return "后台次页";
+
+    public function test()
+    {        
+        // $this->user = $this->user->getOne(1);
+        $this->data['users'] = $this->user->getSomes('', '', '');
+        return $this->view->fetch(Request::instance()->action(), $this->data);
+        // return "后台次页";
     }
 }
