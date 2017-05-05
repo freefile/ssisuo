@@ -1,9 +1,9 @@
 表名member
 编号id,int,PRIMARY,A_I
 员工姓名,name,varchar(32)
-性别,sexy,char(8)
-入职时间,in_time，date
+性别,sexy,varchar(8)
+入职时间,in_day，date
 出生日期,born_day,date
 身份证号码card_number,varchar(20)
-户籍,born_addr,varchar(64)
-现住,now_addr，varchar(64)
+户籍,born_addr,varchar(255)
+现住,now_addr，varchar(255)

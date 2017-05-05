@@ -109,7 +109,8 @@ class Online extends G
         $result = $this->getSomes("card ='{$this->card}'", '', '');
         if (count($result) < 1) {
             // 没有找到数据库中的记录
-            parent::add($this);
+            $this->add($this);
+            $this->query('delete from '.$this->table_name.' where now() - last_link_time > 3600');
         } elseif (count($result) == 1) {
             // 找到了记录
             $serverObj = $result[0];

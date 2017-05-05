@@ -1,8 +1,8 @@
 表名contact
 编号id,int,PRIMARY,A_I
-联系人表名table_name,varchar(32)------判断属于顾客、员工或是联系人
-对应编号table_id,int
-联系方式type,varchar(32)----联系方式
+联系人表名from_table_name,varchar(32)------判断属于顾客、员工或是联系人
+对应编号from_table_id,int
+哪一种联系方式link,varchar(32)
 内容context,varchar(255)
 确认日期confirm_day,date----确认该方式还在使用的日期
 状态status,smallint-----0停用 1正常使用

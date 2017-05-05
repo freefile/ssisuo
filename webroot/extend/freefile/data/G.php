@@ -229,5 +229,9 @@ abstract class G
         Debug::dump($sql);
         Db::query($sql);
     }
+    public function query($sql_){
+        Debug::dump($sql_);
+        Db::query($sql_);
+    }
 }
 ?>

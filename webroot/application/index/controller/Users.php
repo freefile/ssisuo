@@ -4,7 +4,7 @@ namespace app\index\controller;
 use think\Debug;
 use think\Request;
 
-class User extends CL
+class Users extends CL
 {
 
     /**
@@ -27,7 +27,7 @@ class User extends CL
             $this->error('已经登陆','/index');
         } elseif ($this->online->lock_time >= $time_now) {
             // 未达到解锁时间
-            $this->error('为了让账号更安全，请稍等' . ($this->online->lock_time - $time_now) . '秒','/index/user/login');
+            $this->error('为了让账号更安全，请稍等' . ($this->online->lock_time - $time_now) . '秒','/index/users/login');
         }
         // echo $this->online->lock_time . ' - ' . date('Y-m-d H:i:s', $time_now) . ' = ' . (strtotime($this->online->lock_time) - $time_now) . '秒';
         // 如果需要判断用户密码，则进入判断
@@ -89,7 +89,7 @@ class User extends CL
     public function addUser()
     {
         if (! Request::instance()->isPost()) {
-            // abort(404, '/index/user/addUser->请求非法');
+            // abort(404, '/index/users/addUser->请求非法');
         }
         $input = array();
         $input['name'] = '用户名';
@@ -98,7 +98,7 @@ class User extends CL
         $input['group_name'] = '群组';
         $check_msg = '';
         if (Request::instance()->isPost()) {
-            // abort(404, '/index/user/addUser->请求非法');
+            // abort(404, '/index/users/addUser->请求非法');
             $input['name'] = Request::instance()->post('name');
             $input['psd'] = Request::instance()->post('psd');
             $input['limit_level'] = Request::instance()->post('limit_level');
@@ -125,7 +125,7 @@ class User extends CL
                 $user->customer_id = 0;
                 $user->head_icon = '[1]';
                 $this->user->add($user);
-                $this->success('添加成功', '/index/user/index');
+                $this->success('添加成功', '/index/users/index');
             }
         } else {
             $this->data['input'] = $input;
@@ -147,7 +147,7 @@ class User extends CL
                     $this->user->del($id);
                 }
             }
-            $this->success('操作成功', 'index/user/index');
+            $this->success('操作成功', 'index/users/index');
         } else {
             $this->data['users'] = $this->user->getSomes('', '', '');
             $this->data['check_msg'] = '';

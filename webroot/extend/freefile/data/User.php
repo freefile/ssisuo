@@ -1,7 +1,7 @@
 <?php
-namespace freefile\data;
-use think\Validate;
-use think\Debug;
+namespace freefile\data;//位置
+use think\Validate; //验证
+use think\Debug;//调试
 /**
  * 登陆账户数据表
  *
