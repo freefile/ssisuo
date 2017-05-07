@@ -68,7 +68,7 @@ abstract class G
             $obj = $this->arrayToObj($data,1); // 将查询的数据转换为对象，并加入到输出数组中
             array_push($result, $obj);
         }
-        Debug::dump($sql);
+        //Debug::dump($sql);
         return $result;
     }
 
@@ -89,7 +89,7 @@ abstract class G
         if (count($sql_result) == 1) { // 查询有结果，才可以进行
             $result = $this->arrayToObj($sql_result[0],1); // 将查询的数据转换为输出对象
         }
-        Debug::dump($sql);
+        //Debug::dump($sql);
         return $result;
     }
 
@@ -142,8 +142,9 @@ abstract class G
             $set = "`{$name_}`='{$value_}'";
         }
         $id_name = $this->id_name;
-        Db::query("update {$this->table_name} set {$set} where {$id_name} ={$this->$id_name}");
-       // echo "update {$this->table_name} set {$set} where {$id_name} ={$this->$id_name}";
+        $sql = "update {$this->table_name} set {$set} where {$id_name} ={$this->$id_name}";
+        //Debug::dump($sql);
+        Db::query($sql);
     }
 
     /**
@@ -169,7 +170,7 @@ abstract class G
         $set = substr($set, 3);
         $id_name = $this->id_name;
         $sql = "update {$this->table_name} set {$set} where {$id_name} ={$this->$id_name}";
-        Debug::dump($sql);
+        //Debug::dump($sql);
         Db::query($sql);
     }
 
@@ -184,7 +185,7 @@ abstract class G
             abort(404, 'G->del参数值id错：' . $id_);
         }
         $sql ="delete from {$this->table_name} where {$this->id_name} = {$id_}";
-        Debug::dump($sql);
+        //Debug::dump($sql);
         return Db::query($sql);
     }
 
@@ -226,11 +227,11 @@ abstract class G
         }
         $values = substr($values, 1);
         $sql = "insert into {$this->table_name} values({$values})";
-        Debug::dump($sql);
+       // Debug::dump($sql);
         Db::query($sql);
     }
     public function query($sql_){
-        Debug::dump($sql_);
+        //Debug::dump($sql_);
         Db::query($sql_);
     }
 }

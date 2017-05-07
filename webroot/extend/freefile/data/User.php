@@ -69,7 +69,7 @@ class User extends G
     }
     public function rule($data_,&$result_msg_){
         $rule = [
-            'name'  => 'require|min:4|max:32',
+            'name'  => 'require|min:2|max:32',
             'psd' =>'require|min:6|max:32',
             'limit_level'   => 'number|between:0,15',
             'group_name' => 'require|max:32',
@@ -78,7 +78,7 @@ class User extends G
         $msg = [
             'name.require' => '名称必须',
             'name.max'     => '名称最多不能超过32个字符',
-            'name.min' => '名称最短4个字符',
+            'name.min' => '名称最短2个字符',
             'psd.require' => '密码必须',
             'psd.min' => '密码最短6个字符',
             'psd.max'     => '密码最多不能超过32个字符',

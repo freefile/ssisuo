@@ -36,5 +36,5 @@ class CL extends Controller
             'online' => $this->online,
             'user' => $this->user
         );
-    }
+    }    
 }
